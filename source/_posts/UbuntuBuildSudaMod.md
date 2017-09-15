@@ -43,10 +43,9 @@ sudo wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/bin/rep
 sudo chmod +x /usr/bin/repo
 ```
 
-### 5、创建源码目录
+### 5、创建源码目录并进入
 ``` bash
-mkdir -p ~/Android/SudaMod
-cd ~/Android/SudaMod
+mkdir -p ~/Android/SudaMod && cd ~/Android/SudaMod
 ```
 
 ### 6、下载配置清单文件
@@ -54,38 +53,40 @@ cd ~/Android/SudaMod
 #下载核心官方的清单文件
 repo init -u git://github.com/SudaMod/android.git -b sm-3.1
 #配置个人自定义的清单文件，包含device、vendor、kernel
-mkdir -p .repo/local_manifests
-cd .repo/local_manifests
+mkdir -p .repo/local_manifests && cd .repo/local_manifests
 wget https://raw.githubusercontent.com/wzv5/android_device_zuk_z2_plus/sm-3.1/z2_sm_manifest.xml
 ```
 
 ### 7、开始同步源码
 ``` bash
 cd ~/Android/SudaMod
-repo sync -c -f -j8 --force-sync --no-clone-bundle
+repo sync -c -f -j$( nproc --all ) --force-sync --no-clone-bundle --no-tags
 ```
 
 ### 8、同步完成后，创建一个编译环境的脚本"sudamodBuild.sh"输入以下内容
 ``` bash
+
 #!/bin/sh
-
 # 改为自己的源码路径
-BASEPATH=~/Android/SudaMod
-
+BASEPATH=~/Android/DirtyUnicorns
 # 创建 ccache 缓存目录
 mkdir -p $BASEPATH/ccache_dir
-
 export USE_CCACHE=1
 export CCACHE_DIR=$BASEPATH/ccache_dir
-export JACK_SERVER_VM_ARGUMENTS="-Xmx3g -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
+export JACK_SERVER_VM_ARGUMENTS="-Xmx4096M -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
 export SDCLANG=true
 export SDCLANG_PATH=$BASEPATH/prebuilts/snapdragon/llvm-3.8/bin
 export SDCLANG_LTO_DEFS=$BASEPATH/device/qcom/common/sdllvm-lto-defs.mk
-
 cd $BASEPATH
+make clean
+make clobber
+./prebuilts/sdk/tools/jack-admin kill-server
+wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O ./system/core/rootdir/etc/hosts
 ./prebuilts/misc/linux-x86/ccache/ccache -M 50G
 source build/envsetup.sh
 breakfast z2_plus
+mka bacon -j$( nproc --all )
+
 
 ```
 保存并退出后，给脚本执行权限
@@ -143,8 +144,8 @@ make clean
 	sudo apt-get install screen
 	#新建一个名为 hais 的 screen
 	screen -S hais
-	#显示一个名为 hais 的 screnn
-	screen -r hais
+	#显示一个名为 hais 的 screen
+	screen -r -d hais
 	#显示所有正在运行的 screen
 	screen -ls
 	```
