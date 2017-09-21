@@ -25,6 +25,10 @@ tmpfs			/tmp	tmpfs	defaults,size=10G	0	0
 
 ### 2、安装编译工具
 ``` bash
+# 编辑文件/etc/pacman.conf，添加如下两行 添加 lib32支持
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+#安装软件包
 pacman -Syy base-devel git-core gnupg flex bison gperf squashfs-tools zip curl pngcrush schedtool libxml2 lzop schedtool maven tmux screen w3m ncftp bc wget repo curl
 #编译中出现问题，根据需要缺什么补什么
 ```
@@ -56,7 +60,7 @@ wget https://raw.githubusercontent.com/hais1992/android_device_xiaomi_mido/hais-
 #修改使用清华大学的aosp源码
 nano .repo/manifest.xml 
 #把第四行的 https://android.googlesource.com 改为 https://aosp.tuna.tsinghua.edu.cn
-
+#如果不行，改为 git://mirrors.ustc.edu.cn/aosp/ 也可以
 cd ~/Android/LineageOS
 repo sync -c -f -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
