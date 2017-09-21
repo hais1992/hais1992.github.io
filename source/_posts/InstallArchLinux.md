@@ -1,7 +1,7 @@
 ---
 title: VBox安装ArchLinux
 date: 2017-09-17 16:26:32
-tags:
+tags: [Linux,ArchLinux,Arch,Vbox]
 ---
 
 ### 准备软件

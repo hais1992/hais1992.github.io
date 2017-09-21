@@ -1,7 +1,7 @@
 ---
 title: 使用ArchLinux编译LineageOS
 date: 2017-09-17 10:03:38
-tags:
+tags: [Linux,ArchLinux,编译,Android,LineageOS]
 ---
 
 ### 准备工作

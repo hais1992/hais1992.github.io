@@ -1,7 +1,7 @@
 ---
 title: 给Linux 增加sudo命令
 date: 2015-02-01 23:52
-tags: Linux
+tags: [Linux,sudo,shell]
 ---
 习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。
 

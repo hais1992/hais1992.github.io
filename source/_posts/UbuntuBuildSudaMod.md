@@ -1,7 +1,7 @@
 ---
 title: 使用Ubuntu16.04编译SudaMod
 date: 2017-07-28 10:03:38
-tags:
+tags: [Linux,Ubuntu,编译,Android,SudaMod]
 ---
 ##### 注：文章参考 https://github.com/wzv5/android_device_zuk_z2_plus/wiki/ 进行修改整理。
 
