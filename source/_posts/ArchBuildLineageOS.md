@@ -36,7 +36,6 @@ Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 Server = http://mirror.bit.edu.cn/archlinux/$repo/os/$arch
-```
 
 #安装软件包
 pacman -Syy gcc gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt bc jdk8-openjdk base-devel git-core repo wget imagemagick base-devel git-core pngcrush libxml2 lzop maven tmux screen w3m ncftp
