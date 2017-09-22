@@ -152,10 +152,12 @@ make clean
 	
 	
 ### 参考网站：
+    https://github.com/wzv5/android_device_zuk_z2_plus/wiki/
 	https://hais.pw/2017/07/28/UbuntuBuildSudaMod/
 	https://mirror.tuna.tsinghua.edu.cn/help/AOSP/
 	https://lug.ustc.edu.cn/wiki/mirrors/help/aosp
 	https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/
 	https://github.com/sy618/hosts
+	https://www.isthnew.com/build-lineageos/
 	http://blog.csdn.net/gddxz_zhouhao/article/details/53466977
 	
