@@ -23,20 +23,39 @@ tmpfs			/tmp	tmpfs	defaults,size=10G	0	0
 #调整完成后可使用 free -h 查看
 ```
 
-### 2、安装编译工具
+### 2、准备工作
 ``` bash
-# 编辑文件/etc/pacman.conf，添加如下两行 添加 lib32支持
+# 编辑文件/etc/pacman.conf，最后面添加lib32和AUR支持
 [multilib]
 Include = /etc/pacman.d/mirrorlist
+[archlinuxcn]
+SigLevel = Optional TrustAll
+Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+
+# 编辑文件/etc/pacman.d/mirrorlist
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.163.com/archlinux/$repo/os/$arch
+Server = http://mirror.bit.edu.cn/archlinux/$repo/os/$arch
+```
+
 #安装软件包
-pacman -Syy base-devel git-core gnupg flex bison gperf squashfs-tools zip curl pngcrush schedtool libxml2 lzop schedtool maven tmux screen w3m ncftp bc wget repo curl
-#编译中出现问题，根据需要缺什么补什么
+pacman -Syy gcc gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt bc jdk8-openjdk base-devel git-core repo wget imagemagick base-devel git-core pngcrush libxml2 lzop maven tmux screen w3m ncftp
+
+#AUR安装 ncurses ,参考 http://blog.csdn.net/gddxz_zhouhao/article/details/53466977
+yaourt -S ncurses5-compat-libs
+
+#做软连接 python
+ln /usr/bin/python2 /usr/bin/python
+
+# 编辑文件/etc/yaourtrc 去掉 # AURURL 的注释，加入aur镜像地址，修改为
+AURURL="https://aur.tuna.tsinghua.edu.cn"
 ```
 
 ### 3、由于同步Android源码需要翻墙，可以使用修改hosts的方法翻墙
 ``` bash
 #下载hosts翻墙
 wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O /etc/hosts
+
 #使用清华大学的repo源
 export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
 ```
@@ -59,8 +78,7 @@ wget https://raw.githubusercontent.com/hais1992/android_device_xiaomi_mido/hais-
 ``` bash
 #修改使用清华大学的aosp源码
 nano .repo/manifest.xml 
-#把第四行的 https://android.googlesource.com 改为 https://aosp.tuna.tsinghua.edu.cn
-#如果不行，改为 git://mirrors.ustc.edu.cn/aosp/ 也可以
+#把第四行的 https://android.googlesource.com 改为 https://aosp.tuna.tsinghua.edu.cn 或 git://mirrors.ustc.edu.cn/aosp/
 cd ~/Android/LineageOS
 repo sync -c -f -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
@@ -87,7 +105,7 @@ make clobber
 wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O ./system/core/rootdir/etc/hosts
 ./prebuilts/misc/linux-x86/ccache/ccache -M 50G
 source build/envsetup.sh
-breakfast xiaomi_mido
+breakfast mido
 mka bacon -j$( nproc --all )
 
 
@@ -140,4 +158,5 @@ make clean
 	https://lug.ustc.edu.cn/wiki/mirrors/help/aosp
 	https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/
 	https://github.com/sy618/hosts
+	http://blog.csdn.net/gddxz_zhouhao/article/details/53466977
 	
