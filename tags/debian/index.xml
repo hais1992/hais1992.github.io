@@ -6,10 +6,21 @@
     <description>Recent content in Debian on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 10:50:37 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jan 2019 11:20:37 +0800</lastBuildDate>
     
 	<atom:link href="https://hais.pw/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Debian开机自动执行文件</title>
+      <link>https://hais.pw/2019/debianstartdosh/</link>
+      <pubDate>Mon, 14 Jan 2019 11:20:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/debianstartdosh/</guid>
+      <description>创建启动sh脚本文件,输入以下内容
+sleep 20 #延时执行 #下面是要执行的信息 sh /mnt/harddisk/stopMysql.sh &amp;amp;&amp;amp; sh /mnt/harddisk/startAria2.sh  把启动脚本增加到启动文件
+nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineStart.sh &amp;amp;  </description>
+    </item>
     
     <item>
       <title>Debian开机自动挂载U盘</title>
