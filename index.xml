@@ -33,6 +33,101 @@ nohup /root/openMachineStart.sh &amp;amp;
     </item>
     
     <item>
+      <title>Lighttpd配置Https</title>
+      <link>https://hais.pw/2019/lighttpdhttps/</link>
+      <pubDate>Mon, 14 Jan 2019 11:20:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/lighttpdhttps/</guid>
+      <description>&lt;p&gt;1、安装Lighttpd过程省略&lt;/p&gt;
+
+&lt;p&gt;2、编辑 /etc/lighttpd/lighttpd.conf 如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;server.modules = (
+        &amp;quot;mod_access&amp;quot;,
+        &amp;quot;mod_alias&amp;quot;,
+        &amp;quot;mod_compress&amp;quot;,
+        &amp;quot;mod_redirect&amp;quot;,
+)
+
+server.document-root        = &amp;quot;/mnt/harddisk/www&amp;quot;
+server.upload-dirs          = ( &amp;quot;/var/cache/lighttpd/uploads&amp;quot; )
+server.errorlog             = &amp;quot;/var/log/lighttpd/error.log&amp;quot;
+server.pid-file             = &amp;quot;/var/run/lighttpd.pid&amp;quot;
+server.username             = &amp;quot;www-data&amp;quot;
+server.groupname            = &amp;quot;www-data&amp;quot;
+server.port                 = 80
+server.max-worker           = 4
+
+index-file.names            = (&amp;quot;/_h5ai/public/index.php&amp;quot;, &amp;quot;index.php&amp;quot;, &amp;quot;index.html&amp;quot;, &amp;quot;index.lighttpd.html&amp;quot; )
+url.access-deny             = ( &amp;quot;~&amp;quot;, &amp;quot;.inc&amp;quot; )
+static-file.exclude-extensions = ( &amp;quot;.php&amp;quot;, &amp;quot;.pl&amp;quot;, &amp;quot;.fcgi&amp;quot; )
+
+compress.cache-dir          = &amp;quot;/var/cache/lighttpd/compress/&amp;quot;
+compress.filetype           = ( &amp;quot;application/javascript&amp;quot;, &amp;quot;text/css&amp;quot;, &amp;quot;text/html&amp;quot;, &amp;quot;text/plain&amp;quot; )
+
+# default listening port for IPv6 falls back to the IPv4 port
+include_shell &amp;quot;/usr/share/lighttpd/use-ipv6.pl &amp;quot; + server.port
+include_shell &amp;quot;/usr/share/lighttpd/create-mime.assign.pl&amp;quot;
+include_shell &amp;quot;/usr/share/lighttpd/include-conf-enabled.pl&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3、配置/etc/lighttpd/conf-enabled/10-ssl.conf&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# /usr/share/doc/lighttpd/ssl.txt
+
+$SERVER[&amp;quot;socket&amp;quot;] == &amp;quot;:443&amp;quot; {
+     ssl.engine = &amp;quot;enable&amp;quot;
+     ssl.pemfile = &amp;quot;/mnt/harddisk/ssl/myk.pw.pem&amp;quot;
+     $HTTP[&amp;quot;host&amp;quot;] == &amp;quot;myk.pw&amp;quot; {
+         ssl.pemfile = &amp;quot;/mnt/harddisk/ssl/myk.pw.pem&amp;quot;
+         ssl.ca-file = &amp;quot;/mnt/harddisk/ssl/myk.pw_bundle.crt&amp;quot;
+         server.name = &amp;quot;myk.pw&amp;quot;
+         server.document-root = &amp;quot;/mnt/harddisk/myk.pw&amp;quot;
+     }
+     $HTTP[&amp;quot;host&amp;quot;] == &amp;quot;d.myk.pw&amp;quot; {
+         ssl.pemfile = &amp;quot;/mnt/harddisk/ssl/d.myk.pw.pem&amp;quot;
+         ssl.ca-file = &amp;quot;/mnt/harddisk/ssl/d.myk.pw_bundle.crt&amp;quot;
+         server.name = &amp;quot;d.myk.pw&amp;quot;
+         server.document-root = &amp;quot;/mnt/harddisk/d.myk.pw&amp;quot;
+     }
+}
+
+$SERVER[&amp;quot;socket&amp;quot;] == &amp;quot;:80&amp;quot; {
+    $HTTP[&amp;quot;host&amp;quot;] =~ &amp;quot;([^:/]+)&amp;quot; {
+        url.redirect = ( &amp;quot;^/(.*)&amp;quot; =&amp;gt; &amp;quot;https://%0:443/$1&amp;quot; )
+    }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4、假如需要目录验证编辑/etc/lighttpd/conf-enabled/05-auth.conf&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# /usr/share/doc/lighttpd/authentication.txt.gz
+
+server.modules                += ( &amp;quot;mod_auth&amp;quot; )
+
+ auth.backend                 = &amp;quot;plain&amp;quot;
+ auth.backend.plain.userfile  = &amp;quot;/etc/lighttpd/lighttpd.user&amp;quot; #账号密码配置文件 格式 hais:000000 一行一个
+# auth.backend.plain.groupfile = &amp;quot;lighttpd.group&amp;quot;
+
+# auth.backend.ldap.hostname   = &amp;quot;localhost&amp;quot;
+# auth.backend.ldap.base-dn    = &amp;quot;dc=my-domain,dc=com&amp;quot;
+# auth.backend.ldap.filter     = &amp;quot;(uid=$)&amp;quot;
+
+ auth.require                 = (&amp;quot;/个人临时文件/加密目录&amp;quot; =&amp;gt;
+                                (
+                                  &amp;quot;method&amp;quot;  =&amp;gt; &amp;quot;basic&amp;quot;,
+                                  &amp;quot;realm&amp;quot;   =&amp;gt; &amp;quot;Server Status WebSite&amp;quot;,
+                                  &amp;quot;require&amp;quot; =&amp;gt; &amp;quot;user=hais&amp;quot;	
+                                )
+                              )
+
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Debian开机自动挂载U盘</title>
       <link>https://hais.pw/2019/debianstartautomount/</link>
       <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>

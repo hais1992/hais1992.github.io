@@ -23,6 +23,17 @@ nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineS
     </item>
     
     <item>
+      <title>Lighttpd配置Https</title>
+      <link>https://hais.pw/2019/lighttpdhttps/</link>
+      <pubDate>Mon, 14 Jan 2019 11:20:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/lighttpdhttps/</guid>
+      <description>1、安装Lighttpd过程省略
+2、编辑 /etc/lighttpd/lighttpd.conf 如下
+server.modules = ( &amp;quot;mod_access&amp;quot;, &amp;quot;mod_alias&amp;quot;, &amp;quot;mod_compress&amp;quot;, &amp;quot;mod_redirect&amp;quot;, ) server.document-root = &amp;quot;/mnt/harddisk/www&amp;quot; server.upload-dirs = ( &amp;quot;/var/cache/lighttpd/uploads&amp;quot; ) server.errorlog = &amp;quot;/var/log/lighttpd/error.log&amp;quot; server.pid-file = &amp;quot;/var/run/lighttpd.pid&amp;quot; server.username = &amp;quot;www-data&amp;quot; server.groupname = &amp;quot;www-data&amp;quot; server.port = 80 server.max-worker = 4 index-file.names = (&amp;quot;/_h5ai/public/index.php&amp;quot;, &amp;quot;index.php&amp;quot;, &amp;quot;index.html&amp;quot;, &amp;quot;index.lighttpd.html&amp;quot; ) url.access-deny = ( &amp;quot;~&amp;quot;, &amp;quot;.inc&amp;quot; ) static-file.exclude-extensions = ( &amp;quot;.php&amp;quot;, &amp;quot;.pl&amp;quot;, &amp;quot;.fcgi&amp;quot; ) compress.cache-dir = &amp;quot;/var/cache/lighttpd/compress/&amp;quot; compress.filetype = ( &amp;quot;application/javascript&amp;quot;, &amp;quot;text/css&amp;quot;, &amp;quot;text/html&amp;quot;, &amp;quot;text/plain&amp;quot; ) # default listening port for IPv6 falls back to the IPv4 port include_shell &amp;quot;/usr/share/lighttpd/use-ipv6.</description>
+    </item>
+    
+    <item>
       <title>Debian开机自动挂载U盘</title>
       <link>https://hais.pw/2019/debianstartautomount/</link>
       <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>

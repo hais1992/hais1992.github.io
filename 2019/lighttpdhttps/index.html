@@ -9,9 +9,9 @@
   <meta name="description" content="一个屌丝程序员的个人记事本！">
   <meta name="keywords" content="Hais,Hais1992,Hello_海生">
   
-  <link rel="prev" href="https://hais.pw/2019/lighttpdhttps/" />
-  
-  <link rel="canonical" href="https://hais.pw/2019/debianstartdosh/" />
+  <link rel="prev" href="https://hais.pw/2019/debianstartautomount/" />
+  <link rel="next" href="https://hais.pw/2019/debianstartdosh/" />
+  <link rel="canonical" href="https://hais.pw/2019/lighttpdhttps/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Debian开机自动执行文件 | Hais丶
+           Lighttpd配置Https | Hais丶
        
   </title>
-  <meta name="title" content="Debian开机自动执行文件 | Hais丶">
+  <meta name="title" content="Lighttpd配置Https | Hais丶">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,11 +44,11 @@
          "@id": "https://hais.pw/"
     },
     "articleSection" : "posts",
-    "name" : "Debian开机自动执行文件",
-    "headline" : "Debian开机自动执行文件",
-    "description" : "创建启动sh脚本文件,输入以下内容
-sleep 20 #延时执行 #下面是要执行的信息 sh /mnt/harddisk/stopMysql.sh &amp;&amp; sh /mnt/harddisk/startAria2.sh  把启动脚本增加到启动文件
-nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineStart.sh &amp;  ",
+    "name" : "Lighttpd配置Https",
+    "headline" : "Lighttpd配置Https",
+    "description" : "1、安装Lighttpd过程省略
+2、编辑 /etc/lighttpd/lighttpd.conf 如下
+server.modules = ( &quot;mod_access&quot;, &quot;mod_alias&quot;, &quot;mod_compress&quot;, &quot;mod_redirect&quot;, ) server.document-root = &quot;/mnt/harddisk/www&quot; server.upload-dirs = ( &quot;/var/cache/lighttpd/uploads&quot; ) server.errorlog = &quot;/var/log/lighttpd/error.log&quot; server.pid-file = &quot;/var/run/lighttpd.pid&quot; server.username = &quot;www-data&quot; server.groupname = &quot;www-data&quot; server.port = 80 server.max-worker = 4 index-file.names = (&quot;/_h5ai/public/index.php&quot;, &quot;index.php&quot;, &quot;index.html&quot;, &quot;index.lighttpd.html&quot; ) url.access-deny = ( &quot;~&quot;, &quot;.inc&quot; ) static-file.exclude-extensions = ( &quot;.php&quot;, &quot;.pl&quot;, &quot;.fcgi&quot; ) compress.cache-dir = &quot;/var/cache/lighttpd/compress/&quot; compress.filetype = ( &quot;application/javascript&quot;, &quot;text/css&quot;, &quot;text/html&quot;, &quot;text/plain&quot; ) # default listening port for IPv6 falls back to the IPv4 port include_shell &quot;/usr/share/lighttpd/use-ipv6.",
     "inLanguage" : "en-us",
     "author" : "Hello_海生",
     "creator" : "Hello_海生",
@@ -58,9 +58,9 @@ nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineS
     "copyrightYear" : "2019",
     "datePublished": "2019-01-14 11:20:37 &#43;0800 CST",
     "dateModified" : "2019-01-14 11:20:37 &#43;0800 CST",
-    "url" : "https://hais.pw/2019/debianstartdosh/",
-    "wordCount" : "20",
-    "keywords" : [ "Debian","Linux", "Hais丶"]
+    "url" : "https://hais.pw/2019/lighttpdhttps/",
+    "wordCount" : "207",
+    "keywords" : [ "Lighttpd","Linux","Http", "Hais丶"]
 }
 </script>
 
@@ -122,7 +122,7 @@ nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineS
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Debian开机自动执行文件</h1>
+        <h1 class="post-title" itemprop="name headline">Lighttpd配置Https</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://hais.pw/" rel="author">Hello_海生</a> with ♥ 
                 <span class="post-time">
@@ -152,19 +152,91 @@ nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineS
           
           
 
-          <p>创建启动sh脚本文件,输入以下内容</p>
+          <p>1、安装Lighttpd过程省略</p>
 
-<pre><code class="language-bash">sleep 20    #延时执行
-#下面是要执行的信息
-sh /mnt/harddisk/stopMysql.sh &amp;&amp; sh /mnt/harddisk/startAria2.sh
+<p>2、编辑 /etc/lighttpd/lighttpd.conf 如下</p>
+
+<pre><code class="language-bash">server.modules = (
+        &quot;mod_access&quot;,
+        &quot;mod_alias&quot;,
+        &quot;mod_compress&quot;,
+        &quot;mod_redirect&quot;,
+)
+
+server.document-root        = &quot;/mnt/harddisk/www&quot;
+server.upload-dirs          = ( &quot;/var/cache/lighttpd/uploads&quot; )
+server.errorlog             = &quot;/var/log/lighttpd/error.log&quot;
+server.pid-file             = &quot;/var/run/lighttpd.pid&quot;
+server.username             = &quot;www-data&quot;
+server.groupname            = &quot;www-data&quot;
+server.port                 = 80
+server.max-worker           = 4
+
+index-file.names            = (&quot;/_h5ai/public/index.php&quot;, &quot;index.php&quot;, &quot;index.html&quot;, &quot;index.lighttpd.html&quot; )
+url.access-deny             = ( &quot;~&quot;, &quot;.inc&quot; )
+static-file.exclude-extensions = ( &quot;.php&quot;, &quot;.pl&quot;, &quot;.fcgi&quot; )
+
+compress.cache-dir          = &quot;/var/cache/lighttpd/compress/&quot;
+compress.filetype           = ( &quot;application/javascript&quot;, &quot;text/css&quot;, &quot;text/html&quot;, &quot;text/plain&quot; )
+
+# default listening port for IPv6 falls back to the IPv4 port
+include_shell &quot;/usr/share/lighttpd/use-ipv6.pl &quot; + server.port
+include_shell &quot;/usr/share/lighttpd/create-mime.assign.pl&quot;
+include_shell &quot;/usr/share/lighttpd/include-conf-enabled.pl&quot;
 </code></pre>
 
-<p>把启动脚本增加到启动文件</p>
+<p>3、配置/etc/lighttpd/conf-enabled/10-ssl.conf</p>
 
-<pre><code class="language-bash">nano /etc/rc.local
+<pre><code class="language-bash"># /usr/share/doc/lighttpd/ssl.txt
 
-#在 exit 0 前面增加以下一行
-nohup /root/openMachineStart.sh &amp;
+$SERVER[&quot;socket&quot;] == &quot;:443&quot; {
+     ssl.engine = &quot;enable&quot;
+     ssl.pemfile = &quot;/mnt/harddisk/ssl/myk.pw.pem&quot;
+     $HTTP[&quot;host&quot;] == &quot;myk.pw&quot; {
+         ssl.pemfile = &quot;/mnt/harddisk/ssl/myk.pw.pem&quot;
+         ssl.ca-file = &quot;/mnt/harddisk/ssl/myk.pw_bundle.crt&quot;
+         server.name = &quot;myk.pw&quot;
+         server.document-root = &quot;/mnt/harddisk/myk.pw&quot;
+     }
+     $HTTP[&quot;host&quot;] == &quot;d.myk.pw&quot; {
+         ssl.pemfile = &quot;/mnt/harddisk/ssl/d.myk.pw.pem&quot;
+         ssl.ca-file = &quot;/mnt/harddisk/ssl/d.myk.pw_bundle.crt&quot;
+         server.name = &quot;d.myk.pw&quot;
+         server.document-root = &quot;/mnt/harddisk/d.myk.pw&quot;
+     }
+}
+
+$SERVER[&quot;socket&quot;] == &quot;:80&quot; {
+    $HTTP[&quot;host&quot;] =~ &quot;([^:/]+)&quot; {
+        url.redirect = ( &quot;^/(.*)&quot; =&gt; &quot;https://%0:443/$1&quot; )
+    }
+}
+
+</code></pre>
+
+<p>4、假如需要目录验证编辑/etc/lighttpd/conf-enabled/05-auth.conf</p>
+
+<pre><code class="language-bash"># /usr/share/doc/lighttpd/authentication.txt.gz
+
+server.modules                += ( &quot;mod_auth&quot; )
+
+ auth.backend                 = &quot;plain&quot;
+ auth.backend.plain.userfile  = &quot;/etc/lighttpd/lighttpd.user&quot; #账号密码配置文件 格式 hais:000000 一行一个
+# auth.backend.plain.groupfile = &quot;lighttpd.group&quot;
+
+# auth.backend.ldap.hostname   = &quot;localhost&quot;
+# auth.backend.ldap.base-dn    = &quot;dc=my-domain,dc=com&quot;
+# auth.backend.ldap.filter     = &quot;(uid=$)&quot;
+
+ auth.require                 = (&quot;/个人临时文件/加密目录&quot; =&gt;
+                                (
+                                  &quot;method&quot;  =&gt; &quot;basic&quot;,
+                                  &quot;realm&quot;   =&gt; &quot;Server Status WebSite&quot;,
+                                  &quot;require&quot; =&gt; &quot;user=hais&quot;	
+                                )
+                              )
+
+
 </code></pre>
 
     </div>
@@ -180,7 +252,7 @@ nohup /root/openMachineStart.sh &amp;
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://hais.pw/2019/debianstartdosh/>https://hais.pw/2019/debianstartdosh/</span>
+                    <a href=https://hais.pw/2019/lighttpdhttps/>https://hais.pw/2019/lighttpdhttps/</span>
             </p>
             
              
@@ -196,11 +268,14 @@ nohup /root/openMachineStart.sh &amp;
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://hais.pw/tags/debian/">
-                    #Debian</a></span>
+            <span class="tag"><a href="https://hais.pw/tags/lighttpd/">
+                    #Lighttpd</a></span>
             
             <span class="tag"><a href="https://hais.pw/tags/linux/">
                     #Linux</a></span>
+            
+            <span class="tag"><a href="https://hais.pw/tags/http/">
+                    #Http</a></span>
             
             </section>
         
@@ -212,8 +287,10 @@ nohup /root/openMachineStart.sh &amp;
 
     <div class="post-nav">
         
-        <a href="https://hais.pw/2019/lighttpdhttps/" class="prev" rel="prev" title="Lighttpd配置Https"><i class="iconfont icon-left"></i>&nbsp;Lighttpd配置Https</a>
+        <a href="https://hais.pw/2019/debianstartautomount/" class="prev" rel="prev" title="Debian开机自动挂载U盘"><i class="iconfont icon-left"></i>&nbsp;Debian开机自动挂载U盘</a>
          
+        
+        <a href="https://hais.pw/2019/debianstartdosh/" class="next" rel="next" title="Debian开机自动执行文件">Debian开机自动执行文件&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
