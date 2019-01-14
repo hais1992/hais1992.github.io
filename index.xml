@@ -48,7 +48,7 @@ UUID=A8987C2D987BF7E0 /mnt/harddisk auto defaults,noatime,rw,nofail,x-systemd.au
 
 &lt;p&gt;生成网站&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hugo --theme=LeaveIt --baseUrl=&amp;quot;https://hais.pw/&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hugo --theme=LeaveIt --baseUrl=&amp;quot;http://hais.pw/&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;部署、上传&lt;/p&gt;
