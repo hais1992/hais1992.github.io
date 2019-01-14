@@ -2,21 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hais丶</title>
-    <link>http://hais.pw/posts/</link>
+    <link>https://hais.pw/posts/</link>
     <description>Recent content in Posts on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 10:26:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jan 2019 10:50:37 +0800</lastBuildDate>
     
-	<atom:link href="http://hais.pw/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hais.pw/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Debian开机自动挂载U盘</title>
+      <link>https://hais.pw/2019/debianstartautomount/</link>
+      <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/debianstartautomount/</guid>
+      <description>查看U盘(移动硬盘)的分区UUID
+#查看所有 ls -l /dev/disk/by-uuid/ #查看指定 blkid /dev/sda1  根据UUID增加挂载分区,挂载到 /mnt/harddisk 文件夹
+#编辑启动文件 nano /etc/fstab #在最后增加以下行数 UUID=A8987C2D987BF7E0 /mnt/harddisk auto defaults,noatime,rw,nofail,x-systemd.automount 0 0  </description>
+    </item>
+    
+    <item>
       <title>Hugo发布一篇新文章</title>
-      <link>http://hais.pw/2019/hugopostarticle/</link>
+      <link>https://hais.pw/2019/hugopostarticle/</link>
       <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
       
-      <guid>http://hais.pw/2019/hugopostarticle/</guid>
+      <guid>https://hais.pw/2019/hugopostarticle/</guid>
       <description>本地调试
 hugo server --buildDrafts  生成网站
 hugo --theme=LeaveIt --baseUrl=&amp;quot;http://hais.pw/&amp;quot;  部署、上传
@@ -25,10 +36,10 @@ git add -A git commit -m &amp;quot;修改说明&amp;quot; git push  </descriptio
     
     <item>
       <title>关于宾阳县关闭4G网络的投诉</title>
-      <link>http://hais.pw/2017/bingyangclose4g/</link>
+      <link>https://hais.pw/2017/bingyangclose4g/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/bingyangclose4g/</guid>
+      <guid>https://hais.pw/2017/bingyangclose4g/</guid>
       <description> 1、大家都知道从2017年至今我们宾阳县为了打击诈骗犯罪，关闭了我们整个县(城区除外)的所有3G、4G基站，对于这种头痛脚医不从根本上解决问题的方法，一点作用都没有的情况相信大家都是忍无可忍的。  
 2、其实对于这种网络的不合理问题，我们可以向“国家工信部”进行投诉获取帮助，让“广西通信管理局”对相关企业进行通报，早日为我们开通移动4G网络。  国家工信部，全名“工业和信息化部”，一切关于网络的不合理问题都可以向其投诉，比如禁止更换手机套餐、、手机信号问题、乱扣费、收费不合理问题等等，只有你有理，投诉基本上都会成功。 本人就中国移动在宾阳关闭4G网络投诉，中国移动来电要求给予100元话费补充进行和解、撤诉。 本人就中国移动因宽带布线不可以跨公路问题，不给拉宽带也进行投诉，最后也成功的拉上了宽带。 本人就中国联通不同意老用户更换“1元日租卡”问题进行投诉，次日问题也马上解决。 本人就宽带出现问题，技术人员规定时间内未到达处理，中午进行投诉，技术人员傍晚立马来电要求撤诉、处理问题。 总的来说，就是只有你有理，就不要怕，国家会实事求是的办事对各种问题进行处罚。   3、在此希望大家可以一起到“国家工信部”进行投诉，投诉后48小时内就会有 相关的客服人员与你联系，跟你说明各种缘由或给予您补偿各种诱导要求您进行撤诉。 我投诉有三个目标： - 恢复我县所有城镇4G网络，多下点功夫从根本上解决问题，不要使用治标不治本的办法。 - 退一步来讲，可以仅关闭诈骗较多的乡镇网络，尽量让为此受害的人民减少。 - 恳请一视同仁，统一关闭整个县的网络，不要有例外。
  
@@ -38,10 +49,10 @@ git add -A git commit -m &amp;quot;修改说明&amp;quot; git push  </descriptio
     
     <item>
       <title>给 ArchLinux 增加sudo命令</title>
-      <link>http://hais.pw/2017/archlinuxaddsudo/</link>
+      <link>https://hais.pw/2017/archlinuxaddsudo/</link>
       <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/archlinuxaddsudo/</guid>
+      <guid>https://hais.pw/2017/archlinuxaddsudo/</guid>
       <description>习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。
 安装Sudo
 pacman -S sudo  安装完后我们新建个用户，并给他加入sudo的权限
@@ -51,28 +62,28 @@ chmod u+w /etc/sudoers #修改文件给可写 vim /etc/sudoers #修改文件 在
     
     <item>
       <title>VBox安装ArchLinux</title>
-      <link>http://hais.pw/2017/installarchlinux/</link>
+      <link>https://hais.pw/2017/installarchlinux/</link>
       <pubDate>Sun, 17 Sep 2017 16:26:32 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/installarchlinux/</guid>
+      <guid>https://hais.pw/2017/installarchlinux/</guid>
       <description>准备软件 下载Arch：https://www.archlinux.org/download/ 下载Vbox：https://www.virtualbox.org/wiki/Downloads  参考： http://blog.csdn.net/qq_25187981/article/details/75209051 http://bbs.archlinuxcn.org/viewtopic.php?id=1037 https://wiki.archlinux.org/index.php/Installation_guide https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)  安装步骤 ping www.baidu.com	#检查网络 timedatectl set-ntp true	#更新时间 fdisk -l	#查看磁盘名称 fdisk /dev/sda	#磁盘分区 #新建第一个分区，大小为1G，作为交换分区 # n	-&amp;gt;新建 # p -&amp;gt;选择分区类型为主分区 # l -&amp;gt;选择分区扇区号 # 2048 -&amp;gt;设置分区开始的值 # 2099200 -&amp;gt;设置分区结束的值 # # 创建第二个分区，剩下的空间 # n	-&amp;gt;新建 # p -&amp;gt;选择分区类型 # 2 -&amp;gt;选择分区扇区号 # 回车 -&amp;gt;设置分区开始的值 # 回车 -&amp;gt;设置分区结束的值 # # 写入分区信息 # w mkswap /dev/sda1	#格式化交换分区 swapon /dev/sda1	#挂载交换分区 mkfs.</description>
     </item>
     
     <item>
       <title>使用ArchLinux编译LineageOS</title>
-      <link>http://hais.pw/2017/archbuildlineageos/</link>
+      <link>https://hais.pw/2017/archbuildlineageos/</link>
       <pubDate>Sun, 17 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/archbuildlineageos/</guid>
+      <guid>https://hais.pw/2017/archbuildlineageos/</guid>
       <description>准备工作   电脑磁盘空余150G以上 电脑运存大于4G 安装系统时 swap 推荐设置10G 推荐设置 /tmp 空间为10G 系统默认使用 Python2   1、分区调整(如安装系统时已设置swap比较大的可不设置) dd if=/dev/zero of=/swapfile.img bs=1M count=10240 chmod 600 /swapfile.img mkswap /swapfile.img swapon /swapfile.img #编辑 /etc/fstab 在最后加入一行 /swapfile.img	swap	swap	defaults	0	0 tmpfs	/tmp	tmpfs	defaults,size=10G	0	0 #调整完成后可使用 free -h 查看  2、准备工作 # 编辑文件/etc/pacman.conf，最后面添加lib32和AUR支持 [multilib] Include = /etc/pacman.d/mirrorlist [archlinuxcn] SigLevel = Optional TrustAll Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch # 编辑文件/etc/pacman.d/mirrorlist Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch Server = http://mirrors.</description>
     </item>
     
     <item>
       <title>新电脑发布文章的方法</title>
-      <link>http://hais.pw/2017/machinehexopostarticle/</link>
+      <link>https://hais.pw/2017/machinehexopostarticle/</link>
       <pubDate>Fri, 15 Sep 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/machinehexopostarticle/</guid>
+      <guid>https://hais.pw/2017/machinehexopostarticle/</guid>
       <description>1、安装 Node.js 和 Git
 下载地址：http://nodejs.org/ 下载地址：http://git-scm.com/  2、安装Hexo
 npm install -g hexo-cli  3、用git拉下hexo分支代码
@@ -84,19 +95,19 @@ $ git add * $ git commit -m 提交代码 $ git push  参考地址： https://hex
     
     <item>
       <title>使用Ubuntu16.04编译SudaMod</title>
-      <link>http://hais.pw/2017/ubuntubuildsudamod/</link>
+      <link>https://hais.pw/2017/ubuntubuildsudamod/</link>
       <pubDate>Fri, 28 Jul 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/ubuntubuildsudamod/</guid>
+      <guid>https://hais.pw/2017/ubuntubuildsudamod/</guid>
       <description>注：文章参考 https://github.com/wzv5/android_device_zuk_z2_plus/wiki/ 进行修改整理。 准备工作   电脑磁盘空余150G以上 电脑运存大于4G 推荐使用Ubuntu16.04 安装系统时 swap 推荐设置10G 推荐设置 /tmp 空间为10G 系统默认使用 Python2   1、分区调整(如安装系统时已设置swap比较大的可不设置) sudo dd if=/dev/zero of=/swapfile.img bs=1M count=10240 sudo chmod 600 /swapfile.img sudo mkswap /swapfile.img sudo swapon /swapfile.img #编辑 /etc/fstab 在最后加入一行 /swapfile.img	swap	swap	defaults	0	0 tmpfs	/tmp	tmpfs	defaults,size=10G	0	0 #调整完成后可使用 free -h 查看  2、安装编译工具 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core gnupg flex bison gperf libsdl1.</description>
     </item>
     
     <item>
       <title>Hexo发布一篇新文章</title>
-      <link>http://hais.pw/2017/hexopostarticle/</link>
+      <link>https://hais.pw/2017/hexopostarticle/</link>
       <pubDate>Fri, 28 Jul 2017 09:58:44 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/hexopostarticle/</guid>
+      <guid>https://hais.pw/2017/hexopostarticle/</guid>
       <description>发布新文章
 hexo new [layout] &amp;lt;title&amp;gt;  生成文件
 hexo generate  调试、查看
@@ -106,10 +117,10 @@ hexo deploy  </description>
     
     <item>
       <title>linux 控制台 连接 vpn (PPTPD)</title>
-      <link>http://hais.pw/2015/vpnpptpd/</link>
+      <link>https://hais.pw/2015/vpnpptpd/</link>
       <pubDate>Sun, 10 May 2015 12:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2015/vpnpptpd/</guid>
+      <guid>https://hais.pw/2015/vpnpptpd/</guid>
       <description>其实在ubuntu里面很简单。
 1、安装 pptpd
 $ sudo apt-get install pptp-linux  2、就可以直接拨号连接了（下面中文改为相应的参数）
@@ -119,10 +130,10 @@ sudo pptpsetup --create 名称 --server 地址 --username 账号 --password 密�
     
     <item>
       <title>给Linux 增加sudo命令</title>
-      <link>http://hais.pw/2015/linuxsudo/</link>
+      <link>https://hais.pw/2015/linuxsudo/</link>
       <pubDate>Sun, 01 Feb 2015 23:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2015/linuxsudo/</guid>
+      <guid>https://hais.pw/2015/linuxsudo/</guid>
       <description>习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。
 然后第一感觉就是使用 root 用户安装 sudo 包
 $ apt-get install sudo  安装完后我们新建个用户&amp;rdquo;hais&amp;rdquo;，并给他加入sudo的权限

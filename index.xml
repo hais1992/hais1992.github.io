@@ -2,19 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hais丶 on Hais丶</title>
-    <link>http://hais.pw/</link>
+    <link>https://hais.pw/</link>
     <description>Recent content in Hais丶 on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 10:26:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jan 2019 10:50:37 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Debian开机自动挂载U盘</title>
+      <link>https://hais.pw/2019/debianstartautomount/</link>
+      <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/debianstartautomount/</guid>
+      <description>&lt;p&gt;查看U盘(移动硬盘)的分区UUID&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#查看所有
+ls -l /dev/disk/by-uuid/ 
+
+#查看指定
+blkid /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;根据UUID增加挂载分区,挂载到 /mnt/harddisk 文件夹&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#编辑启动文件
+nano /etc/fstab
+
+#在最后增加以下行数
+UUID=A8987C2D987BF7E0 /mnt/harddisk auto defaults,noatime,rw,nofail,x-systemd.automount 0 0
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Hugo发布一篇新文章</title>
-      <link>http://hais.pw/2019/hugopostarticle/</link>
+      <link>https://hais.pw/2019/hugopostarticle/</link>
       <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
       
-      <guid>http://hais.pw/2019/hugopostarticle/</guid>
+      <guid>https://hais.pw/2019/hugopostarticle/</guid>
       <description>&lt;p&gt;本地调试&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hugo server --buildDrafts
@@ -36,10 +62,10 @@ git push
     
     <item>
       <title>关于宾阳县关闭4G网络的投诉</title>
-      <link>http://hais.pw/2017/bingyangclose4g/</link>
+      <link>https://hais.pw/2017/bingyangclose4g/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/bingyangclose4g/</guid>
+      <guid>https://hais.pw/2017/bingyangclose4g/</guid>
       <description>
 
 &lt;h4 id=&#34;1-大家都知道从2017年至今我们宾阳县为了打击诈骗犯罪-关闭了我们整个县-城区除外-的所有3g-4g基站-对于这种头痛脚医不从根本上解决问题的方法-一点作用都没有的情况相信大家都是忍无可忍的&#34;&gt;1、大家都知道从2017年至今我们宾阳县为了打击诈骗犯罪，关闭了我们整个县(城区除外)的所有3G、4G基站，对于这种头痛脚医不从根本上解决问题的方法，一点作用都没有的情况相信大家都是忍无可忍的。&lt;/h4&gt;
@@ -94,10 +120,10 @@ git push
     
     <item>
       <title>给 ArchLinux 增加sudo命令</title>
-      <link>http://hais.pw/2017/archlinuxaddsudo/</link>
+      <link>https://hais.pw/2017/archlinuxaddsudo/</link>
       <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/archlinuxaddsudo/</guid>
+      <guid>https://hais.pw/2017/archlinuxaddsudo/</guid>
       <description>&lt;p&gt;习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。&lt;/p&gt;
 
 &lt;p&gt;安装Sudo&lt;/p&gt;
@@ -126,10 +152,10 @@ chmod u-w /etc/sudoers         #恢复文件权限
     
     <item>
       <title>VBox安装ArchLinux</title>
-      <link>http://hais.pw/2017/installarchlinux/</link>
+      <link>https://hais.pw/2017/installarchlinux/</link>
       <pubDate>Sun, 17 Sep 2017 16:26:32 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/installarchlinux/</guid>
+      <guid>https://hais.pw/2017/installarchlinux/</guid>
       <description>
 
 &lt;h3 id=&#34;准备软件&#34;&gt;准备软件&lt;/h3&gt;
@@ -252,10 +278,10 @@ pacman -Sy openssh
     
     <item>
       <title>使用ArchLinux编译LineageOS</title>
-      <link>http://hais.pw/2017/archbuildlineageos/</link>
+      <link>https://hais.pw/2017/archbuildlineageos/</link>
       <pubDate>Sun, 17 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/archbuildlineageos/</guid>
+      <guid>https://hais.pw/2017/archbuildlineageos/</guid>
       <description>
 
 &lt;h3 id=&#34;准备工作&#34;&gt;准备工作&lt;/h3&gt;
@@ -431,10 +457,10 @@ http://blog.csdn.net/gddxz_zhouhao/article/details/53466977
     
     <item>
       <title>新电脑发布文章的方法</title>
-      <link>http://hais.pw/2017/machinehexopostarticle/</link>
+      <link>https://hais.pw/2017/machinehexopostarticle/</link>
       <pubDate>Fri, 15 Sep 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/machinehexopostarticle/</guid>
+      <guid>https://hais.pw/2017/machinehexopostarticle/</guid>
       <description>&lt;p&gt;1、安装 Node.js 和 Git&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;下载地址：http://nodejs.org/
@@ -481,10 +507,10 @@ $ git push
     
     <item>
       <title>使用Ubuntu16.04编译SudaMod</title>
-      <link>http://hais.pw/2017/ubuntubuildsudamod/</link>
+      <link>https://hais.pw/2017/ubuntubuildsudamod/</link>
       <pubDate>Fri, 28 Jul 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/ubuntubuildsudamod/</guid>
+      <guid>https://hais.pw/2017/ubuntubuildsudamod/</guid>
       <description>
 
 &lt;h5 id=&#34;注-文章参考-https-github-com-wzv5-android-device-zuk-z2-plus-wiki-进行修改整理&#34;&gt;注：文章参考 &lt;a href=&#34;https://github.com/wzv5/android_device_zuk_z2_plus/wiki/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/wzv5/android_device_zuk_z2_plus/wiki/&lt;/a&gt; 进行修改整理。&lt;/h5&gt;
@@ -654,10 +680,10 @@ screen -ls
     
     <item>
       <title>Hexo发布一篇新文章</title>
-      <link>http://hais.pw/2017/hexopostarticle/</link>
+      <link>https://hais.pw/2017/hexopostarticle/</link>
       <pubDate>Fri, 28 Jul 2017 09:58:44 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/hexopostarticle/</guid>
+      <guid>https://hais.pw/2017/hexopostarticle/</guid>
       <description>&lt;p&gt;发布新文章&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hexo new [layout] &amp;lt;title&amp;gt;
@@ -682,10 +708,10 @@ screen -ls
     
     <item>
       <title>about</title>
-      <link>http://hais.pw/about/</link>
+      <link>https://hais.pw/about/</link>
       <pubDate>Fri, 14 Jul 2017 16:47:03 +0000</pubDate>
       
-      <guid>http://hais.pw/about/</guid>
+      <guid>https://hais.pw/about/</guid>
       <description>&lt;p&gt;关于 Hello_海生&lt;/p&gt;
 
 &lt;p&gt;广西壮族人、农村90后标准屌丝。
@@ -700,20 +726,20 @@ screen -ls
     
     <item>
       <title>友情链接</title>
-      <link>http://hais.pw/links/</link>
+      <link>https://hais.pw/links/</link>
       <pubDate>Fri, 14 Jul 2017 16:46:48 +0000</pubDate>
       
-      <guid>http://hais.pw/links/</guid>
+      <guid>https://hais.pw/links/</guid>
       <description>&lt;p&gt;暂时没有哟~&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>linux 控制台 连接 vpn (PPTPD)</title>
-      <link>http://hais.pw/2015/vpnpptpd/</link>
+      <link>https://hais.pw/2015/vpnpptpd/</link>
       <pubDate>Sun, 10 May 2015 12:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2015/vpnpptpd/</guid>
+      <guid>https://hais.pw/2015/vpnpptpd/</guid>
       <description>&lt;p&gt;其实在ubuntu里面很简单。&lt;/p&gt;
 
 &lt;p&gt;1、安装 pptpd&lt;/p&gt;
@@ -739,10 +765,10 @@ screen -ls
     
     <item>
       <title>给Linux 增加sudo命令</title>
-      <link>http://hais.pw/2015/linuxsudo/</link>
+      <link>https://hais.pw/2015/linuxsudo/</link>
       <pubDate>Sun, 01 Feb 2015 23:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2015/linuxsudo/</guid>
+      <guid>https://hais.pw/2015/linuxsudo/</guid>
       <description>&lt;p&gt;习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。&lt;/p&gt;
 
 &lt;p&gt;然后第一感觉就是使用 root 用户安装 sudo 包&lt;/p&gt;

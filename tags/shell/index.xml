@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shell on Hais丶</title>
-    <link>http://hais.pw/tags/shell/</link>
+    <link>https://hais.pw/tags/shell/</link>
     <description>Recent content in shell on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Feb 2015 23:52:38 +0000</lastBuildDate>
     
-	<atom:link href="http://hais.pw/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hais.pw/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>给Linux 增加sudo命令</title>
-      <link>http://hais.pw/2015/linuxsudo/</link>
+      <link>https://hais.pw/2015/linuxsudo/</link>
       <pubDate>Sun, 01 Feb 2015 23:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2015/linuxsudo/</guid>
+      <guid>https://hais.pw/2015/linuxsudo/</guid>
       <description>习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。
 然后第一感觉就是使用 root 用户安装 sudo 包
 $ apt-get install sudo  安装完后我们新建个用户&amp;rdquo;hais&amp;rdquo;，并给他加入sudo的权限

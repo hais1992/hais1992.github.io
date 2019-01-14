@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hais丶</title>
-    <link>http://hais.pw/categories/</link>
+    <link>https://hais.pw/categories/</link>
     <description>Recent content in Categories on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://hais.pw/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hais.pw/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux</title>
-      <link>http://hais.pw/categories/linux/</link>
-      <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
+      <link>https://hais.pw/categories/linux/</link>
+      <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>
       
-      <guid>http://hais.pw/categories/linux/</guid>
+      <guid>https://hais.pw/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>其它</title>
-      <link>http://hais.pw/categories/%E5%85%B6%E5%AE%83/</link>
+      <link>https://hais.pw/categories/%E5%85%B6%E5%AE%83/</link>
       <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
       
-      <guid>http://hais.pw/categories/%E5%85%B6%E5%AE%83/</guid>
+      <guid>https://hais.pw/categories/%E5%85%B6%E5%AE%83/</guid>
       <description></description>
     </item>
     

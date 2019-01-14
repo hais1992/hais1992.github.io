@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ArchLinux on Hais丶</title>
-    <link>http://hais.pw/tags/archlinux/</link>
+    <link>https://hais.pw/tags/archlinux/</link>
     <description>Recent content in ArchLinux on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Sep 2017 10:03:38 +0000</lastBuildDate>
     
-	<atom:link href="http://hais.pw/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hais.pw/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>给 ArchLinux 增加sudo命令</title>
-      <link>http://hais.pw/2017/archlinuxaddsudo/</link>
+      <link>https://hais.pw/2017/archlinuxaddsudo/</link>
       <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/archlinuxaddsudo/</guid>
+      <guid>https://hais.pw/2017/archlinuxaddsudo/</guid>
       <description>习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。
 安装Sudo
 pacman -S sudo  安装完后我们新建个用户，并给他加入sudo的权限
@@ -26,19 +26,19 @@ chmod u+w /etc/sudoers #修改文件给可写 vim /etc/sudoers #修改文件 在
     
     <item>
       <title>VBox安装ArchLinux</title>
-      <link>http://hais.pw/2017/installarchlinux/</link>
+      <link>https://hais.pw/2017/installarchlinux/</link>
       <pubDate>Sun, 17 Sep 2017 16:26:32 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/installarchlinux/</guid>
+      <guid>https://hais.pw/2017/installarchlinux/</guid>
       <description>准备软件 下载Arch：https://www.archlinux.org/download/ 下载Vbox：https://www.virtualbox.org/wiki/Downloads  参考： http://blog.csdn.net/qq_25187981/article/details/75209051 http://bbs.archlinuxcn.org/viewtopic.php?id=1037 https://wiki.archlinux.org/index.php/Installation_guide https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)  安装步骤 ping www.baidu.com	#检查网络 timedatectl set-ntp true	#更新时间 fdisk -l	#查看磁盘名称 fdisk /dev/sda	#磁盘分区 #新建第一个分区，大小为1G，作为交换分区 # n	-&amp;gt;新建 # p -&amp;gt;选择分区类型为主分区 # l -&amp;gt;选择分区扇区号 # 2048 -&amp;gt;设置分区开始的值 # 2099200 -&amp;gt;设置分区结束的值 # # 创建第二个分区，剩下的空间 # n	-&amp;gt;新建 # p -&amp;gt;选择分区类型 # 2 -&amp;gt;选择分区扇区号 # 回车 -&amp;gt;设置分区开始的值 # 回车 -&amp;gt;设置分区结束的值 # # 写入分区信息 # w mkswap /dev/sda1	#格式化交换分区 swapon /dev/sda1	#挂载交换分区 mkfs.</description>
     </item>
     
     <item>
       <title>使用ArchLinux编译LineageOS</title>
-      <link>http://hais.pw/2017/archbuildlineageos/</link>
+      <link>https://hais.pw/2017/archbuildlineageos/</link>
       <pubDate>Sun, 17 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/2017/archbuildlineageos/</guid>
+      <guid>https://hais.pw/2017/archbuildlineageos/</guid>
       <description>准备工作   电脑磁盘空余150G以上 电脑运存大于4G 安装系统时 swap 推荐设置10G 推荐设置 /tmp 空间为10G 系统默认使用 Python2   1、分区调整(如安装系统时已设置swap比较大的可不设置) dd if=/dev/zero of=/swapfile.img bs=1M count=10240 chmod 600 /swapfile.img mkswap /swapfile.img swapon /swapfile.img #编辑 /etc/fstab 在最后加入一行 /swapfile.img	swap	swap	defaults	0	0 tmpfs	/tmp	tmpfs	defaults,size=10G	0	0 #调整完成后可使用 free -h 查看  2、准备工作 # 编辑文件/etc/pacman.conf，最后面添加lib32和AUR支持 [multilib] Include = /etc/pacman.d/mirrorlist [archlinuxcn] SigLevel = Optional TrustAll Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch # 编辑文件/etc/pacman.d/mirrorlist Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch Server = http://mirrors.</description>
     </item>
     

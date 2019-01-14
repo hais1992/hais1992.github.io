@@ -9,9 +9,9 @@
   <meta name="description" content="一个屌丝程序员的个人记事本！">
   <meta name="keywords" content="Hais,Hais1992,Hello_海生">
   
-  <link rel="prev" href="https://hais.pw/2017/ubuntubuildsudamod/" />
-  <link rel="next" href="https://hais.pw/2017/archbuildlineageos/" />
-  <link rel="canonical" href="https://hais.pw/2017/machinehexopostarticle/" />
+  <link rel="prev" href="https://hais.pw/2019/hugopostarticle/" />
+  
+  <link rel="canonical" href="https://hais.pw/2019/debianstartautomount/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           新电脑发布文章的方法 | Hais丶
+           Debian开机自动挂载U盘 | Hais丶
        
   </title>
-  <meta name="title" content="新电脑发布文章的方法 | Hais丶">
+  <meta name="title" content="Debian开机自动挂载U盘 | Hais丶">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,27 +44,23 @@
          "@id": "https://hais.pw"
     },
     "articleSection" : "posts",
-    "name" : "新电脑发布文章的方法",
-    "headline" : "新电脑发布文章的方法",
-    "description" : "1、安装 Node.js 和 Git
-下载地址：http://nodejs.org/ 下载地址：http://git-scm.com/  2、安装Hexo
-npm install -g hexo-cli  3、用git拉下hexo分支代码
-$ git clone -b hexo git@github.com:hais1992/hais1992.github.io.git  4、安装环境
-$ cd hais1992.github.io.git $ npm install hexo $ hexo init $ npm install $ npm install hexo-deployer-git  5、然后就可以编辑文章发布了
-$ hexo generate -d  6、发布完成后就可以继续提交代码备份了
-$ git add * $ git commit -m 提交代码 $ git push  参考地址： https://hexo.io/zh-cn/docs/setup.html http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more https://github.com/Ben02/hexo-theme-Anatole/wiki/Installation",
+    "name" : "Debian开机自动挂载U盘",
+    "headline" : "Debian开机自动挂载U盘",
+    "description" : "查看U盘(移动硬盘)的分区UUID
+#查看所有 ls -l /dev/disk/by-uuid/ #查看指定 blkid /dev/sda1  根据UUID增加挂载分区,挂载到 /mnt/harddisk 文件夹
+#编辑启动文件 nano /etc/fstab #在最后增加以下行数 UUID=A8987C2D987BF7E0 /mnt/harddisk auto defaults,noatime,rw,nofail,x-systemd.automount 0 0  ",
     "inLanguage" : "en-us",
     "author" : "Hello_海生",
     "creator" : "Hello_海生",
     "publisher": "Hello_海生",
     "accountablePerson" : "Hello_海生",
     "copyrightHolder" : "Hello_海生",
-    "copyrightYear" : "2017",
-    "datePublished": "2017-09-15 10:52:38 &#43;0000 UTC",
-    "dateModified" : "2017-09-15 10:52:38 &#43;0000 UTC",
-    "url" : "https://hais.pw/2017/machinehexopostarticle/",
-    "wordCount" : "58",
-    "keywords" : [ "Hexo","新电脑","发布","文章", "Hais丶"]
+    "copyrightYear" : "2019",
+    "datePublished": "2019-01-14 10:50:37 &#43;0800 CST",
+    "dateModified" : "2019-01-14 10:50:37 &#43;0800 CST",
+    "url" : "https://hais.pw/2019/debianstartautomount/",
+    "wordCount" : "21",
+    "keywords" : [ "Debian","Linux", "Hais丶"]
 }
 </script>
 
@@ -126,16 +122,16 @@ $ git add * $ git commit -m 提交代码 $ git push  参考地址： https://hex
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">新电脑发布文章的方法</h1>
+        <h1 class="post-title" itemprop="name headline">Debian开机自动挂载U盘</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://hais.pw" rel="author">Hello_海生</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2017-09-15 itemprop="datePublished">September 15, 2017</time>
+                on <time datetime=2019-01-14 itemprop="datePublished">January 14, 2019</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://hais.pw/categories/%E5%85%B6%E5%AE%83/"> 其它 </a>
+                        <a href="https://hais.pw/categories/linux/"> Linux </a>
                         
                 </span>
         </div>
@@ -156,47 +152,23 @@ $ git add * $ git commit -m 提交代码 $ git push  参考地址： https://hex
           
           
 
-          <p>1、安装 Node.js 和 Git</p>
+          <p>查看U盘(移动硬盘)的分区UUID</p>
 
-<pre><code class="language-bash">下载地址：http://nodejs.org/
-下载地址：http://git-scm.com/
+<pre><code class="language-bash">#查看所有
+ls -l /dev/disk/by-uuid/ 
+
+#查看指定
+blkid /dev/sda1
 </code></pre>
 
-<p>2、安装Hexo</p>
+<p>根据UUID增加挂载分区,挂载到 /mnt/harddisk 文件夹</p>
 
-<pre><code class="language-bash">npm install -g hexo-cli
+<pre><code class="language-bash">#编辑启动文件
+nano /etc/fstab
+
+#在最后增加以下行数
+UUID=A8987C2D987BF7E0 /mnt/harddisk auto defaults,noatime,rw,nofail,x-systemd.automount 0 0
 </code></pre>
-
-<p>3、用git拉下hexo分支代码</p>
-
-<pre><code class="language-bash">$ git clone -b hexo git@github.com:hais1992/hais1992.github.io.git
-</code></pre>
-
-<p>4、安装环境</p>
-
-<pre><code class="language-bash">$ cd hais1992.github.io.git
-$ npm install hexo
-$ hexo init
-$ npm install
-$ npm install hexo-deployer-git
-</code></pre>
-
-<p>5、然后就可以编辑文章发布了</p>
-
-<pre><code class="language-bash">$ hexo generate -d
-</code></pre>
-
-<p>6、发布完成后就可以继续提交代码备份了</p>
-
-<pre><code class="language-bash">$ git add *
-$ git commit -m 提交代码
-$ git push
-</code></pre>
-
-<p>参考地址：
-    <a href="https://hexo.io/zh-cn/docs/setup.html" rel="nofollow noreferrer" target="_blank">https://hexo.io/zh-cn/docs/setup.html</a>
-    <a href="http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more" rel="nofollow noreferrer" target="_blank">http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more</a>
-    <a href="https://github.com/Ben02/hexo-theme-Anatole/wiki/Installation" rel="nofollow noreferrer" target="_blank">https://github.com/Ben02/hexo-theme-Anatole/wiki/Installation</a></p>
 
     </div>
 
@@ -211,7 +183,7 @@ $ git push
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://hais.pw/2017/machinehexopostarticle/>https://hais.pw/2017/machinehexopostarticle/</span>
+                    <a href=https://hais.pw/2019/debianstartautomount/>https://hais.pw/2019/debianstartautomount/</span>
             </p>
             
              
@@ -227,17 +199,11 @@ $ git push
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://hais.pw/tags/hexo/">
-                    #Hexo</a></span>
+            <span class="tag"><a href="https://hais.pw/tags/debian/">
+                    #Debian</a></span>
             
-            <span class="tag"><a href="https://hais.pw/tags/%E6%96%B0%E7%94%B5%E8%84%91/">
-                    #新电脑</a></span>
-            
-            <span class="tag"><a href="https://hais.pw/tags/%E5%8F%91%E5%B8%83/">
-                    #发布</a></span>
-            
-            <span class="tag"><a href="https://hais.pw/tags/%E6%96%87%E7%AB%A0/">
-                    #文章</a></span>
+            <span class="tag"><a href="https://hais.pw/tags/linux/">
+                    #Linux</a></span>
             
             </section>
         
@@ -249,10 +215,8 @@ $ git push
 
     <div class="post-nav">
         
-        <a href="https://hais.pw/2017/ubuntubuildsudamod/" class="prev" rel="prev" title="使用Ubuntu16.04编译SudaMod"><i class="iconfont icon-left"></i>&nbsp;使用Ubuntu16.04编译SudaMod</a>
+        <a href="https://hais.pw/2019/hugopostarticle/" class="prev" rel="prev" title="Hugo发布一篇新文章"><i class="iconfont icon-left"></i>&nbsp;Hugo发布一篇新文章</a>
          
-        
-        <a href="https://hais.pw/2017/archbuildlineageos/" class="next" rel="next" title="使用ArchLinux编译LineageOS">使用ArchLinux编译LineageOS&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

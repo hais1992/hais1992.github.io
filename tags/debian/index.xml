@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debian on Hais丶</title>
+    <link>https://hais.pw/tags/debian/</link>
+    <description>Recent content in Debian on Hais丶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jan 2019 10:50:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://hais.pw/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian开机自动挂载U盘</title>
+      <link>https://hais.pw/2019/debianstartautomount/</link>
+      <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/debianstartautomount/</guid>
+      <description>查看U盘(移动硬盘)的分区UUID
+#查看所有 ls -l /dev/disk/by-uuid/ #查看指定 blkid /dev/sda1  根据UUID增加挂载分区,挂载到 /mnt/harddisk 文件夹
+#编辑启动文件 nano /etc/fstab #在最后增加以下行数 UUID=A8987C2D987BF7E0 /mnt/harddisk auto defaults,noatime,rw,nofail,x-systemd.automount 0 0  </description>
+    </item>
+    
+  </channel>
+</rss>

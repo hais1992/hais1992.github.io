@@ -2,228 +2,237 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hais丶</title>
-    <link>http://hais.pw/tags/</link>
+    <link>https://hais.pw/tags/</link>
     <description>Recent content in Tags on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Dec 2017 10:52:38 +0000</lastBuildDate>
     
-	<atom:link href="http://hais.pw/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hais.pw/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>4G网络</title>
-      <link>http://hais.pw/tags/4g%E7%BD%91%E7%BB%9C/</link>
+      <link>https://hais.pw/tags/4g%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/4g%E7%BD%91%E7%BB%9C/</guid>
+      <guid>https://hais.pw/tags/4g%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>http://hais.pw/tags/android/</link>
+      <link>https://hais.pw/tags/android/</link>
       <pubDate>Sun, 17 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/android/</guid>
+      <guid>https://hais.pw/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arch</title>
-      <link>http://hais.pw/tags/arch/</link>
+      <link>https://hais.pw/tags/arch/</link>
       <pubDate>Sun, 17 Sep 2017 16:26:32 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/arch/</guid>
+      <guid>https://hais.pw/tags/arch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ArchLinux</title>
-      <link>http://hais.pw/tags/archlinux/</link>
+      <link>https://hais.pw/tags/archlinux/</link>
       <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/archlinux/</guid>
+      <guid>https://hais.pw/tags/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>https://hais.pw/tags/debian/</link>
+      <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/tags/debian/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hexo</title>
-      <link>http://hais.pw/tags/hexo/</link>
+      <link>https://hais.pw/tags/hexo/</link>
       <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
       
-      <guid>http://hais.pw/tags/hexo/</guid>
+      <guid>https://hais.pw/tags/hexo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LineageOS</title>
-      <link>http://hais.pw/tags/lineageos/</link>
+      <link>https://hais.pw/tags/lineageos/</link>
       <pubDate>Sun, 17 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/lineageos/</guid>
+      <guid>https://hais.pw/tags/lineageos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://hais.pw/tags/linux/</link>
-      <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
+      <link>https://hais.pw/tags/linux/</link>
+      <pubDate>Mon, 14 Jan 2019 10:50:37 +0800</pubDate>
       
-      <guid>http://hais.pw/tags/linux/</guid>
+      <guid>https://hais.pw/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PPTPD</title>
-      <link>http://hais.pw/tags/pptpd/</link>
+      <link>https://hais.pw/tags/pptpd/</link>
       <pubDate>Sun, 10 May 2015 12:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/pptpd/</guid>
+      <guid>https://hais.pw/tags/pptpd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SudaMod</title>
-      <link>http://hais.pw/tags/sudamod/</link>
+      <link>https://hais.pw/tags/sudamod/</link>
       <pubDate>Fri, 28 Jul 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/sudamod/</guid>
+      <guid>https://hais.pw/tags/sudamod/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>http://hais.pw/tags/ubuntu/</link>
+      <link>https://hais.pw/tags/ubuntu/</link>
       <pubDate>Fri, 28 Jul 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/ubuntu/</guid>
+      <guid>https://hais.pw/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VPN</title>
-      <link>http://hais.pw/tags/vpn/</link>
+      <link>https://hais.pw/tags/vpn/</link>
       <pubDate>Sun, 10 May 2015 12:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/vpn/</guid>
+      <guid>https://hais.pw/tags/vpn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vbox</title>
-      <link>http://hais.pw/tags/vbox/</link>
+      <link>https://hais.pw/tags/vbox/</link>
       <pubDate>Sun, 17 Sep 2017 16:26:32 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/vbox/</guid>
+      <guid>https://hais.pw/tags/vbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>http://hais.pw/tags/shell/</link>
+      <link>https://hais.pw/tags/shell/</link>
       <pubDate>Sun, 01 Feb 2015 23:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/shell/</guid>
+      <guid>https://hais.pw/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sudo</title>
-      <link>http://hais.pw/tags/sudo/</link>
+      <link>https://hais.pw/tags/sudo/</link>
       <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/sudo/</guid>
+      <guid>https://hais.pw/tags/sudo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>关闭</title>
-      <link>http://hais.pw/tags/%E5%85%B3%E9%97%AD/</link>
+      <link>https://hais.pw/tags/%E5%85%B3%E9%97%AD/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/%E5%85%B3%E9%97%AD/</guid>
+      <guid>https://hais.pw/tags/%E5%85%B3%E9%97%AD/</guid>
       <description></description>
     </item>
     
     <item>
       <title>发布</title>
-      <link>http://hais.pw/tags/%E5%8F%91%E5%B8%83/</link>
+      <link>https://hais.pw/tags/%E5%8F%91%E5%B8%83/</link>
       <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
       
-      <guid>http://hais.pw/tags/%E5%8F%91%E5%B8%83/</guid>
+      <guid>https://hais.pw/tags/%E5%8F%91%E5%B8%83/</guid>
       <description></description>
     </item>
     
     <item>
       <title>宾阳县</title>
-      <link>http://hais.pw/tags/%E5%AE%BE%E9%98%B3%E5%8E%BF/</link>
+      <link>https://hais.pw/tags/%E5%AE%BE%E9%98%B3%E5%8E%BF/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/%E5%AE%BE%E9%98%B3%E5%8E%BF/</guid>
+      <guid>https://hais.pw/tags/%E5%AE%BE%E9%98%B3%E5%8E%BF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>投诉</title>
-      <link>http://hais.pw/tags/%E6%8A%95%E8%AF%89/</link>
+      <link>https://hais.pw/tags/%E6%8A%95%E8%AF%89/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/%E6%8A%95%E8%AF%89/</guid>
+      <guid>https://hais.pw/tags/%E6%8A%95%E8%AF%89/</guid>
       <description></description>
     </item>
     
     <item>
       <title>文章</title>
-      <link>http://hais.pw/tags/%E6%96%87%E7%AB%A0/</link>
+      <link>https://hais.pw/tags/%E6%96%87%E7%AB%A0/</link>
       <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
       
-      <guid>http://hais.pw/tags/%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://hais.pw/tags/%E6%96%87%E7%AB%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>新电脑</title>
-      <link>http://hais.pw/tags/%E6%96%B0%E7%94%B5%E8%84%91/</link>
+      <link>https://hais.pw/tags/%E6%96%B0%E7%94%B5%E8%84%91/</link>
       <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
       
-      <guid>http://hais.pw/tags/%E6%96%B0%E7%94%B5%E8%84%91/</guid>
+      <guid>https://hais.pw/tags/%E6%96%B0%E7%94%B5%E8%84%91/</guid>
       <description></description>
     </item>
     
     <item>
       <title>电信</title>
-      <link>http://hais.pw/tags/%E7%94%B5%E4%BF%A1/</link>
+      <link>https://hais.pw/tags/%E7%94%B5%E4%BF%A1/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/%E7%94%B5%E4%BF%A1/</guid>
+      <guid>https://hais.pw/tags/%E7%94%B5%E4%BF%A1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>移动</title>
-      <link>http://hais.pw/tags/%E7%A7%BB%E5%8A%A8/</link>
+      <link>https://hais.pw/tags/%E7%A7%BB%E5%8A%A8/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/%E7%A7%BB%E5%8A%A8/</guid>
+      <guid>https://hais.pw/tags/%E7%A7%BB%E5%8A%A8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>编译</title>
-      <link>http://hais.pw/tags/%E7%BC%96%E8%AF%91/</link>
+      <link>https://hais.pw/tags/%E7%BC%96%E8%AF%91/</link>
       <pubDate>Sun, 17 Sep 2017 10:03:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/%E7%BC%96%E8%AF%91/</guid>
+      <guid>https://hais.pw/tags/%E7%BC%96%E8%AF%91/</guid>
       <description></description>
     </item>
     
     <item>
       <title>联通</title>
-      <link>http://hais.pw/tags/%E8%81%94%E9%80%9A/</link>
+      <link>https://hais.pw/tags/%E8%81%94%E9%80%9A/</link>
       <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
       
-      <guid>http://hais.pw/tags/%E8%81%94%E9%80%9A/</guid>
+      <guid>https://hais.pw/tags/%E8%81%94%E9%80%9A/</guid>
       <description></description>
     </item>
     
