@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hexo on Hais丶</title>
+    <link>http://hais.pw/tags/hexo/</link>
+    <description>Recent content in Hexo on Hais丶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jan 2019 10:26:34 +0800</lastBuildDate>
+    
+	<atom:link href="http://hais.pw/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo发布一篇新文章</title>
+      <link>http://hais.pw/2019/hugopostarticle/</link>
+      <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
+      
+      <guid>http://hais.pw/2019/hugopostarticle/</guid>
+      <description>本地调试
+hugo server --buildDrafts  生成网站
+hugo --theme=LeaveIt --baseUrl=&amp;quot;http://hais.pw/&amp;quot;  部署、上传
+git add -A git commit -m &amp;quot;修改说明&amp;quot; git push  </description>
+    </item>
+    
+    <item>
+      <title>新电脑发布文章的方法</title>
+      <link>http://hais.pw/2017/machinehexopostarticle/</link>
+      <pubDate>Fri, 15 Sep 2017 10:52:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/machinehexopostarticle/</guid>
+      <description>1、安装 Node.js 和 Git
+下载地址：http://nodejs.org/ 下载地址：http://git-scm.com/  2、安装Hexo
+npm install -g hexo-cli  3、用git拉下hexo分支代码
+$ git clone -b hexo git@github.com:hais1992/hais1992.github.io.git  4、安装环境
+$ cd hais1992.github.io.git $ npm install hexo $ hexo init $ npm install $ npm install hexo-deployer-git  5、然后就可以编辑文章发布了
+$ hexo generate -d  6、发布完成后就可以继续提交代码备份了
+$ git add * $ git commit -m 提交代码 $ git push  参考地址： https://hexo.io/zh-cn/docs/setup.html http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more https://github.com/Ben02/hexo-theme-Anatole/wiki/Installation</description>
+    </item>
+    
+    <item>
+      <title>Hexo发布一篇新文章</title>
+      <link>http://hais.pw/2017/hexopostarticle/</link>
+      <pubDate>Fri, 28 Jul 2017 09:58:44 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/hexopostarticle/</guid>
+      <description>发布新文章
+hexo new [layout] &amp;lt;title&amp;gt;  生成文件
+hexo generate  调试、查看
+hexo server  部署、上传
+hexo deploy  </description>
+    </item>
+    
+  </channel>
+</rss>

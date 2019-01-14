@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SudaMod on Hais丶</title>
+    <link>http://hais.pw/tags/sudamod/</link>
+    <description>Recent content in SudaMod on Hais丶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Jul 2017 10:03:38 +0000</lastBuildDate>
+    
+	<atom:link href="http://hais.pw/tags/sudamod/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Ubuntu16.04编译SudaMod</title>
+      <link>http://hais.pw/2017/ubuntubuildsudamod/</link>
+      <pubDate>Fri, 28 Jul 2017 10:03:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/ubuntubuildsudamod/</guid>
+      <description>注：文章参考 https://github.com/wzv5/android_device_zuk_z2_plus/wiki/ 进行修改整理。 准备工作   电脑磁盘空余150G以上 电脑运存大于4G 推荐使用Ubuntu16.04 安装系统时 swap 推荐设置10G 推荐设置 /tmp 空间为10G 系统默认使用 Python2   1、分区调整(如安装系统时已设置swap比较大的可不设置) sudo dd if=/dev/zero of=/swapfile.img bs=1M count=10240 sudo chmod 600 /swapfile.img sudo mkswap /swapfile.img sudo swapon /swapfile.img #编辑 /etc/fstab 在最后加入一行 /swapfile.img	swap	swap	defaults	0	0 tmpfs	/tmp	tmpfs	defaults,size=10G	0	0 #调整完成后可使用 free -h 查看  2、安装编译工具 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core gnupg flex bison gperf libsdl1.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPN on Hais丶</title>
+    <link>http://hais.pw/tags/vpn/</link>
+    <description>Recent content in VPN on Hais丶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2015 12:52:38 +0000</lastBuildDate>
+    
+	<atom:link href="http://hais.pw/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux 控制台 连接 vpn (PPTPD)</title>
+      <link>http://hais.pw/2015/vpnpptpd/</link>
+      <pubDate>Sun, 10 May 2015 12:52:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2015/vpnpptpd/</guid>
+      <description>其实在ubuntu里面很简单。
+1、安装 pptpd
+$ sudo apt-get install pptp-linux  2、就可以直接拨号连接了（下面中文改为相应的参数）
+sudo pptpsetup --create 名称 --server 地址 --username 账号 --password 密码 --encrypt --start  –create后的是创建的连接名称，可以为任意名称; –server后接的是vpn服务器的IP; –username是用户名 –password是密码，在这也可以没这个参数，命令稍后会自动询问。这样可以保证账号安全 –encrypt 是表示需要加密，不必指定加密方式，命令会读取配置文件中的加密方式 –start是表示创建连接完后马上连接，如果你不想连，就不写
+如果创建好了连接–start选项或者是下次再想连接时，输入命令 “sudo pon 名称” 就可以了，然后 “sudo poff”命令可以 断开当前连接。</description>
+    </item>
+    
+  </channel>
+</rss>

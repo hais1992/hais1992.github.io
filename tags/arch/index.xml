@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arch on Hais丶</title>
+    <link>http://hais.pw/tags/arch/</link>
+    <description>Recent content in Arch on Hais丶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Sep 2017 16:26:32 +0000</lastBuildDate>
+    
+	<atom:link href="http://hais.pw/tags/arch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VBox安装ArchLinux</title>
+      <link>http://hais.pw/2017/installarchlinux/</link>
+      <pubDate>Sun, 17 Sep 2017 16:26:32 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/installarchlinux/</guid>
+      <description>准备软件 下载Arch：https://www.archlinux.org/download/ 下载Vbox：https://www.virtualbox.org/wiki/Downloads  参考： http://blog.csdn.net/qq_25187981/article/details/75209051 http://bbs.archlinuxcn.org/viewtopic.php?id=1037 https://wiki.archlinux.org/index.php/Installation_guide https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)  安装步骤 ping www.baidu.com	#检查网络 timedatectl set-ntp true	#更新时间 fdisk -l	#查看磁盘名称 fdisk /dev/sda	#磁盘分区 #新建第一个分区，大小为1G，作为交换分区 # n	-&amp;gt;新建 # p -&amp;gt;选择分区类型为主分区 # l -&amp;gt;选择分区扇区号 # 2048 -&amp;gt;设置分区开始的值 # 2099200 -&amp;gt;设置分区结束的值 # # 创建第二个分区，剩下的空间 # n	-&amp;gt;新建 # p -&amp;gt;选择分区类型 # 2 -&amp;gt;选择分区扇区号 # 回车 -&amp;gt;设置分区开始的值 # 回车 -&amp;gt;设置分区结束的值 # # 写入分区信息 # w mkswap /dev/sda1	#格式化交换分区 swapon /dev/sda1	#挂载交换分区 mkfs.</description>
+    </item>
+    
+  </channel>
+</rss>

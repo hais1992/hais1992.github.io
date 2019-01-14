@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Hello_海生">
+  <meta name="description" content="一个屌丝程序员的个人记事本！">
+  <meta name="keywords" content="Hais,Hais1992,Hello_海生">
+  
+  <link rel="prev" href="http://hais.pw/2017/hexopostarticle/" />
+  <link rel="next" href="http://hais.pw/2017/machinehexopostarticle/" />
+  <link rel="canonical" href="http://hais.pw/2017/ubuntubuildsudamod/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           使用Ubuntu16.04编译SudaMod | Hais丶
+       
+  </title>
+  <meta name="title" content="使用Ubuntu16.04编译SudaMod | Hais丶">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "http://hais.pw/"
+    },
+    "articleSection" : "posts",
+    "name" : "使用Ubuntu16.04编译SudaMod",
+    "headline" : "使用Ubuntu16.04编译SudaMod",
+    "description" : "注：文章参考 https://github.com/wzv5/android_device_zuk_z2_plus/wiki/ 进行修改整理。 准备工作   电脑磁盘空余150G以上 电脑运存大于4G 推荐使用Ubuntu16.04 安装系统时 swap 推荐设置10G 推荐设置 /tmp 空间为10G 系统默认使用 Python2   1、分区调整(如安装系统时已设置swap比较大的可不设置) sudo dd if=/dev/zero of=/swapfile.img bs=1M count=10240 sudo chmod 600 /swapfile.img sudo mkswap /swapfile.img sudo swapon /swapfile.img #编辑 /etc/fstab 在最后加入一行 /swapfile.img	swap	swap	defaults	0	0 tmpfs	/tmp	tmpfs	defaults,size=10G	0	0 #调整完成后可使用 free -h 查看  2、安装编译工具 sudo apt-get update &amp;&amp; sudo apt-get install git-core gnupg flex bison gperf libsdl1.",
+    "inLanguage" : "en-us",
+    "author" : "Hello_海生",
+    "creator" : "Hello_海生",
+    "publisher": "Hello_海生",
+    "accountablePerson" : "Hello_海生",
+    "copyrightHolder" : "Hello_海生",
+    "copyrightYear" : "2017",
+    "datePublished": "2017-07-28 10:03:38 &#43;0000 UTC",
+    "dateModified" : "2017-07-28 10:03:38 &#43;0000 UTC",
+    "url" : "http://hais.pw/2017/ubuntubuildsudamod/",
+    "wordCount" : "318",
+    "keywords" : [ "Linux","Ubuntu","编译","Android","SudaMod", "Hais丶"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://hais.pw/">Hais丶</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/links/" title="">Links</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://hais.pw/">Hais丶</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/links/" title="">Links</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">使用Ubuntu16.04编译SudaMod</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="http://hais.pw/" rel="author">Hello_海生</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2017-07-28 itemprop="datePublished">July 28, 2017</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="http://hais.pw/categories/linux/"> Linux </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h5 id="注-文章参考-https-github-com-wzv5-android-device-zuk-z2-plus-wiki-进行修改整理">注：文章参考 <a href="https://github.com/wzv5/android_device_zuk_z2_plus/wiki/" rel="nofollow noreferrer" target="_blank">https://github.com/wzv5/android_device_zuk_z2_plus/wiki/</a> 进行修改整理。</h5>
+
+<h3 id="准备工作">准备工作</h3>
+
+<blockquote>
+<ul>
+<li>电脑磁盘空余150G以上</li>
+<li>电脑运存大于4G</li>
+<li>推荐使用Ubuntu16.04</li>
+<li>安装系统时 swap 推荐设置10G</li>
+<li>推荐设置 /tmp 空间为10G</li>
+<li>系统默认使用 Python2</li>
+</ul>
+</blockquote>
+
+<h3 id="1-分区调整-如安装系统时已设置swap比较大的可不设置">1、分区调整(如安装系统时已设置swap比较大的可不设置)</h3>
+
+<pre><code class="language-bash">sudo dd if=/dev/zero of=/swapfile.img bs=1M count=10240
+sudo chmod 600 /swapfile.img
+sudo mkswap /swapfile.img
+sudo swapon /swapfile.img
+#编辑 /etc/fstab 在最后加入一行
+/swapfile.img	swap	swap	defaults			0	0
+tmpfs			/tmp	tmpfs	defaults,size=10G	0	0
+#调整完成后可使用 free -h 查看
+</code></pre>
+
+<h3 id="2-安装编译工具">2、安装编译工具</h3>
+
+<pre><code class="language-bash">sudo apt-get update &amp;&amp; sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk3.0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev gcc-multilib maven tmux screen w3m ncftp liblz4-tool pngquant bc
+#编译过程中缺少依赖rsync,使用sudo apt-get install rsync解决
+</code></pre>
+
+<h3 id="3-由于同步android源码需要翻墙-可以使用修改hosts的方法翻墙">3、由于同步Android源码需要翻墙，可以使用修改hosts的方法翻墙</h3>
+
+<pre><code class="language-bash">sudo wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O /etc/hosts
+</code></pre>
+
+<h3 id="4-安装repo">4、安装repo</h3>
+
+<pre><code class="language-bash">#下载安装
+sudo wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/bin/repo
+sudo chmod +x /usr/bin/repo
+</code></pre>
+
+<h3 id="5-创建源码目录并进入">5、创建源码目录并进入</h3>
+
+<pre><code class="language-bash">mkdir -p ~/Android/SudaMod &amp;&amp; cd ~/Android/SudaMod
+</code></pre>
+
+<h3 id="6-下载配置清单文件">6、下载配置清单文件</h3>
+
+<pre><code class="language-bash">#下载核心官方的清单文件
+repo init -u git://github.com/SudaMod/android.git -b sm-3.1
+#配置个人自定义的清单文件，包含device、vendor、kernel
+mkdir -p .repo/local_manifests &amp;&amp; cd .repo/local_manifests
+wget https://raw.githubusercontent.com/wzv5/android_device_zuk_z2_plus/sm-3.1/z2_sm_manifest.xml
+</code></pre>
+
+<h3 id="7-开始同步源码">7、开始同步源码</h3>
+
+<pre><code class="language-bash">cd ~/Android/SudaMod
+repo sync -c -f -j$( nproc --all ) --force-sync --no-clone-bundle --no-tags
+</code></pre>
+
+<h3 id="8-同步完成后-创建一个编译环境的脚本-sudamodbuild-sh-输入以下内容">8、同步完成后，创建一个编译环境的脚本&rdquo;sudamodBuild.sh&rdquo;输入以下内容</h3>
+
+<pre><code class="language-bash">
+#!/bin/sh
+# 改为自己的源码路径
+BASEPATH=~/Android/DirtyUnicorns
+# 创建 ccache 缓存目录
+mkdir -p $BASEPATH/ccache_dir
+export USE_CCACHE=1
+export CCACHE_DIR=$BASEPATH/ccache_dir
+export JACK_SERVER_VM_ARGUMENTS=&quot;-Xmx4096M -Dfile.encoding=UTF-8 -XX:+TieredCompilation&quot;
+export SDCLANG=true
+export SDCLANG_PATH=$BASEPATH/prebuilts/snapdragon/llvm-3.8/bin
+export SDCLANG_LTO_DEFS=$BASEPATH/device/qcom/common/sdllvm-lto-defs.mk
+cd $BASEPATH
+make clean
+make clobber
+./prebuilts/sdk/tools/jack-admin kill-server
+wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O ./system/core/rootdir/etc/hosts
+./prebuilts/misc/linux-x86/ccache/ccache -M 50G
+source build/envsetup.sh
+breakfast z2_plus
+mka bacon -j$( nproc --all )
+
+
+</code></pre>
+
+<p>保存并退出后，给脚本执行权限</p>
+
+<pre><code class="language-bash">chmod +x sudamodBuild.sh
+</code></pre>
+
+<h3 id="9-开始编译">9、开始编译</h3>
+
+<pre><code class="language-bash">#执行刚刚的脚本进入编译环境
+source sudamodBuild.sh
+#开始编译
+brunch z2_plus
+#编译结算后执行命令释放资源
+croot
+./prebuilts/sdk/tools/jack-admin kill-server
+#执行清理，便于下次编译
+croot
+make clean
+</code></pre>
+
+<h2 id="其它说明">其它说明</h2>
+
+<blockquote>
+<ul>
+<li>如果要收集编译日记，则编译的时候执行“brunch z2_plus | tee ~/sudalog.txt”</li>
+<li>后期更新的话就 “repo sync” 同步上游源码，再次编译就可以了</li>
+
+<li><p>制作OTA包</p>
+
+<pre><code class="language-bash">#每次编译完后进入目录，把 sm_z2_plus-target_files-xxx.zip 文件备份
+~/Android/SudaMod/out/target/product/z2_plus/obj/PACKAGING/target_files_intermediates
+#当包有两个后，就可以使用命令制作增量包了
+croot
+./build/tools/releasetools/ota_from_target_files -i sm_z2_plus-target_files-old.zip sm_z2_plus-target_files-new.zip ota.zip
+</code></pre></li>
+
+<li><p>添加主题引擎，编辑清单文件 ~/Android/SudaMod/.repo/local_manifests 增加以下两行内容，后执行 &ldquo;repo sync&rdquo; 同步
+``` bash
+<project name="sudamod/android_vendor_extra-1" path="vendor/extra" remote="github" revision="cm-14.1-rootless"/>
+<project name="substratum/interfacer" path="packages/services/ThemeInterfacer" remote="github" revision="n-rootless"/></p></li>
+</ul>
+</blockquote>
+
+<pre><code>#每次同步源码都需要重新打补丁 &quot; ./vendor/extra/patch.sh &quot;
+#加入主题管理器，创建 prebuilt 目录，在其中放入主题管理器 Substratum.apk 文件，编辑 sm.mk 文件，在最后加入以下代码后保存即可
+PRODUCT_COPY_FILES += \$(LOCAL_PATH)/prebuilt/Substratum.apk:/system/app/Substratum/Substratum.apk
+```
+</code></pre>
+
+<blockquote>
+<ul>
+<li><p>编译的时候偶尔卡住不动或者有提示“Compiling SDK Stubs with Jack”，的可以改一下jack的配置文件</p>
+
+<pre><code class="language-bash">#修改 ./prebuilts/sdk/tools/jack-admin，找到
+JACK_SERVER_COMMAND=&quot;java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -cp $LAUNCHER_JAR $LAUNCHER_NAME&quot;
+#改为
+JACK_SERVER_COMMAND=&quot;java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -Xmx4096M -cp $LAUNCHER_JAR $LAUNCHER_NAME&quot;
+</code></pre></li>
+
+<li><p>如果是使用远程机器进行编译，为了预防网络不稳定重连ssh的情况，可以使用 screen 来进行编译</p>
+
+<pre><code class="language-bash">sudo apt-get install screen
+#新建一个名为 hais 的 screen
+screen -S hais
+#显示一个名为 hais 的 screen
+screen -r -d hais
+#显示所有正在运行的 screen
+screen -ls
+</code></pre></li>
+</ul>
+</blockquote>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Hello_海生 </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=http://hais.pw/2017/ubuntubuildsudamod/>http://hais.pw/2017/ubuntubuildsudamod/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="http://hais.pw/tags/linux/">
+                    #Linux</a></span>
+            
+            <span class="tag"><a href="http://hais.pw/tags/ubuntu/">
+                    #Ubuntu</a></span>
+            
+            <span class="tag"><a href="http://hais.pw/tags/%E7%BC%96%E8%AF%91/">
+                    #编译</a></span>
+            
+            <span class="tag"><a href="http://hais.pw/tags/android/">
+                    #Android</a></span>
+            
+            <span class="tag"><a href="http://hais.pw/tags/sudamod/">
+                    #SudaMod</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="http://hais.pw/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="http://hais.pw/2017/hexopostarticle/" class="prev" rel="prev" title="Hexo发布一篇新文章"><i class="iconfont icon-left"></i>&nbsp;Hexo发布一篇新文章</a>
+         
+        
+        <a href="http://hais.pw/2017/machinehexopostarticle/" class="next" rel="next" title="新电脑发布文章的方法">新电脑发布文章的方法&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2014 - 2019</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="http://hais.pw/">Hello_海生</a> | </span> 
+         
+
+         
+            <a href="http://www.miibeian.gov.cn/" target="_blank" rel="external nofollow">桂ICP备15000640号 </a> |
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

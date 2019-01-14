@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hais丶 on Hais丶</title>
+    <link>http://hais.pw/</link>
+    <description>Recent content in Hais丶 on Hais丶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jan 2019 10:26:34 +0800</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo发布一篇新文章</title>
+      <link>http://hais.pw/2019/hugopostarticle/</link>
+      <pubDate>Mon, 14 Jan 2019 10:26:34 +0800</pubDate>
+      
+      <guid>http://hais.pw/2019/hugopostarticle/</guid>
+      <description>&lt;p&gt;本地调试&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hugo server --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;生成网站&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hugo --theme=LeaveIt --baseUrl=&amp;quot;http://hais.pw/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;部署、上传&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git add -A
+git commit -m &amp;quot;修改说明&amp;quot;
+git push
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>关于宾阳县关闭4G网络的投诉</title>
+      <link>http://hais.pw/2017/bingyangclose4g/</link>
+      <pubDate>Thu, 21 Dec 2017 10:52:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/bingyangclose4g/</guid>
+      <description>
+
+&lt;h4 id=&#34;1-大家都知道从2017年至今我们宾阳县为了打击诈骗犯罪-关闭了我们整个县-城区除外-的所有3g-4g基站-对于这种头痛脚医不从根本上解决问题的方法-一点作用都没有的情况相信大家都是忍无可忍的&#34;&gt;1、大家都知道从2017年至今我们宾阳县为了打击诈骗犯罪，关闭了我们整个县(城区除外)的所有3G、4G基站，对于这种头痛脚医不从根本上解决问题的方法，一点作用都没有的情况相信大家都是忍无可忍的。&lt;/h4&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://s1.ax2x.com/2018/01/21/bIJEX.png&#34; alt=&#34;关闭网络通知&#34; /&gt;&lt;/center&gt;
+&lt;/br&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;2-其实对于这种网络的不合理问题-我们可以向-国家工信部-进行投诉获取帮助-让-广西通信管理局-对相关企业进行通报-早日为我们开通移动4g网络&#34;&gt;2、其实对于这种网络的不合理问题，我们可以向“国家工信部”进行投诉获取帮助，让“广西通信管理局”对相关企业进行通报，早日为我们开通移动4G网络。&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;国家工信部，全名“工业和信息化部”，一切关于网络的不合理问题都可以向其投诉，比如禁止更换手机套餐、、手机信号问题、乱扣费、收费不合理问题等等，只有你有理，投诉基本上都会成功。&lt;/li&gt;
+&lt;li&gt;本人就中国移动在宾阳关闭4G网络投诉，中国移动来电要求给予100元话费补充进行和解、撤诉。&lt;/li&gt;
+&lt;li&gt;本人就中国移动因宽带布线不可以跨公路问题，不给拉宽带也进行投诉，最后也成功的拉上了宽带。&lt;/li&gt;
+&lt;li&gt;本人就中国联通不同意老用户更换“1元日租卡”问题进行投诉，次日问题也马上解决。&lt;/li&gt;
+&lt;li&gt;本人就宽带出现问题，技术人员规定时间内未到达处理，中午进行投诉，技术人员傍晚立马来电要求撤诉、处理问题。&lt;/li&gt;
+&lt;li&gt;总的来说，就是只有你有理，就不要怕，国家会实事求是的办事对各种问题进行处罚。
+&lt;/br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;3-在此希望大家可以一起到-国家工信部-进行投诉-投诉后48小时内就会有-相关的客服人员与你联系-跟你说明各种缘由或给予您补偿各种诱导要求您进行撤诉&#34;&gt;3、在此希望大家可以一起到“国家工信部”进行投诉，投诉后48小时内就会有 相关的客服人员与你联系，跟你说明各种缘由或给予您补偿各种诱导要求您进行撤诉。&lt;/h4&gt;
+
+&lt;p&gt;我投诉有三个目标：
+- 恢复我县所有城镇4G网络，多下点功夫从根本上解决问题，不要使用治标不治本的办法。
+- 退一步来讲，可以仅关闭诈骗较多的乡镇网络，尽量让为此受害的人民减少。
+- 恳请一视同仁，统一关闭整个县的网络，不要有例外。&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://s1.ax2x.com/2018/01/21/bIkuh.png&#34; alt=&#34;投诉内容&#34; /&gt;&lt;/center&gt;
+&lt;/br&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;4-希望大家一起号召亲朋好友们进行投诉-众人拾材火焰高希望大家可以一起投诉-就算不可以恢复4g网络也会得到赔偿-也会给运营商压力-每次投诉企业都会被扣分-罚款-所以非常害怕-下面我来说以下投诉步骤&#34;&gt;4、希望大家一起号召亲朋好友们进行投诉，众人拾材火焰高希望大家可以一起投诉，就算不可以恢复4G网络也会得到赔偿，也会给运营商压力（每次投诉企业都会被扣分、罚款，所以非常害怕），下面我来说以下投诉步骤。&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;打开工信部的投诉网站：&lt;a href=&#34;http://www.chinatcc.gov.cn:8080/cms/shensus/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;http://www.chinatcc.gov.cn:8080/cms/shensus/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;按照要求填写准确的内容（身份证、姓名、联系电话等全部要真实）&lt;/li&gt;
+&lt;li&gt;要选择“已向企业投诉”，内容写“应上级要求，关闭的，自己无权决定！”&lt;/li&gt;
+&lt;li&gt;投诉内容写(最长300字)
+&lt;code&gt;自2017年以来我县为了打击诈骗犯罪活动 三大运营商 一直关闭着手机4G网络，使得我县逐渐和当前的互联网时代脱轨，导致我县人民不仅享受不到互联网的便捷，还处处受着折磨，对于三大运营商这种一刀切的方法，我县民怨四起：亲朋好友们都说：世界诈骗犯罪的都有，为何只有我县使用这种一刀切的方法进行处理，退一步说诈骗较多的城镇就那么几个，这样一刀切，把整个县除县城之外的4G关闭实在不合适，而且当前家家户户都有宽带，单单关闭4G网络，这种头痛脚医不从根本上解决问题的方法，一点作用都没有。在此我仅代表宾阳县乡镇人民提出一些希望：1、恢复我县所有城镇4G网络，从根本上解决问题，不要使用治标不治本的办法。2、退一步来讲，可以仅关闭诈骗较多的乡镇网络，尽量让为此受害的人民减少。3、或恳请一视同仁，统一关闭整个县的网络（城区不要例外）使得住在县城的官员懂得没有网络的不便、懂得农民的痛苦、懂得实事求是的为人民办事的重要性，一起团结合作的把问题的根源解决。&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点确定提交投诉后48小时内就会有 相关的客服人员与你联系，跟你说明各种缘由或给予您补偿各种诱导要求您进行撤诉，您可以说明一下各种不合理、浪费话费、不方便的问题，然后要求100-200元赔偿，也可以不同意赔偿让工信部来处理此问题。（在此我是建议各位长期在家的朋友们不要同意撤诉、赔偿）。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://s1.ax2x.com/2018/01/21/bIPl6.jpg&#34; alt=&#34;投诉内容&#34; /&gt;&lt;/center&gt;
+&lt;/br&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;5-最后祝大家投诉成功-多多转发-让大家都行动起来-本人文采太差-语句不通-大家可以相应的改一下投诉内容&#34;&gt;5.最后祝大家投诉成功，多多转发，让大家都行动起来，本人文采太差，语句不通，大家可以相应的改一下投诉内容。&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;投诉通话记录本人都已经录音了，但是声音太难听就不放到这里来献丑了，如有想听的可加一下 露圩吧友Q群：250279367 (@Hello_海生 询问)。&lt;/li&gt;
+&lt;li&gt;对于各种不明白的也可以加一下Q群：250279367  (@Hello_海生 询问)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>给 ArchLinux 增加sudo命令</title>
+      <link>http://hais.pw/2017/archlinuxaddsudo/</link>
+      <pubDate>Thu, 21 Sep 2017 10:03:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/archlinuxaddsudo/</guid>
+      <description>&lt;p&gt;习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。&lt;/p&gt;
+
+&lt;p&gt;安装Sudo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pacman -S sudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装完后我们新建个用户，并给他加入sudo的权限&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;useradd hais     #添加一个hais用户,如果是ubuntu命令为 adduser
+passwd hais     #给hais用户设置密码
+mkdir /home/hais      #给hais用户创建一个文件夹
+chown hais:hais /home/hais        #给hais设置home文件
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;创建好了之后，开始配置sudo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chmod u+w /etc/sudoers         #修改文件给可写
+vim /etc/sudoers               #修改文件 在 &#39;root ALL=(ALL) ALL&#39; 后增加一行 “hais ALL=(ALL) ALL”
+chmod u-w /etc/sudoers         #恢复文件权限
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后就OK了， 可以愉快的使用 sudo 了&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VBox安装ArchLinux</title>
+      <link>http://hais.pw/2017/installarchlinux/</link>
+      <pubDate>Sun, 17 Sep 2017 16:26:32 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/installarchlinux/</guid>
+      <description>
+
+&lt;h3 id=&#34;准备软件&#34;&gt;准备软件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;下载Arch：https://www.archlinux.org/download/
+下载Vbox：https://www.virtualbox.org/wiki/Downloads
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;参考&#34;&gt;参考：&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;http://blog.csdn.net/qq_25187981/article/details/75209051
+http://bbs.archlinuxcn.org/viewtopic.php?id=1037
+https://wiki.archlinux.org/index.php/Installation_guide
+https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ping www.baidu.com			#检查网络
+
+timedatectl set-ntp true	#更新时间
+
+fdisk -l					#查看磁盘名称
+
+fdisk /dev/sda				#磁盘分区
+
+#新建第一个分区，大小为1G，作为交换分区
+# n		  -&amp;gt;新建
+# p  	  -&amp;gt;选择分区类型为主分区
+# l       -&amp;gt;选择分区扇区号
+# 2048    -&amp;gt;设置分区开始的值
+# 2099200 -&amp;gt;设置分区结束的值
+#
+# 创建第二个分区，剩下的空间
+# n		  -&amp;gt;新建
+# p  	  -&amp;gt;选择分区类型
+# 2       -&amp;gt;选择分区扇区号
+# 回车    -&amp;gt;设置分区开始的值
+# 回车    -&amp;gt;设置分区结束的值
+#
+# 写入分区信息
+# w
+
+mkswap /dev/sda1	#格式化交换分区
+
+swapon /dev/sda1	#挂载交换分区
+
+mkfs.ext4 /dev/sda2	#格式化文件分区
+
+mount /dev/sda2 /mnt	#挂载文件分区
+
+# 将下载的源选择为中国
+sed -i &#39;/China/!{n;/Server/s/^/#/};t;n&#39; /etc/pacman.d/mirrorlist
+
+pacstrap /mnt base	# 下载安装基本的系统
+
+genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab	# 设置自动挂载分区
+
+arch-chroot /mnt	# 进入下载好的系统进行配置
+
+# 设置系统时区
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+hwclock --systohc	# 同步时间
+
+# 设置本地化，将en_US.UTF-8前的#号去掉
+vi /etc/locale.gen
+
+# 应用本地化配置
+locale-gen
+
+# 设置系统语言
+echo LANG=en_US.UTF-8 &amp;gt; /etc/locale.conf
+
+# 设置本机名称
+echo ArchLinux &amp;gt; /etc/hostname
+
+# 设置密码
+passwd
+
+# 更新包的信息
+pacman -Ssy
+
+# 下载Boot Loader包并安装
+pacman -S grub
+
+# 将Boot Loader安装到指定的硬盘
+grub-install --target=i386-pc /dev/sda
+
+# 创建Boot Loader配置
+grub-mkconfig -o /boot/grub/grub.cfg
+
+# 退出安装的系统
+exit
+
+# 卸载分区
+umount -R /mnt
+
+# 重新启动
+reboot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;重启进入系统后的工作&#34;&gt;重启进入系统后的工作&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ip a	#查询机器IP 
+
+#开始联网
+systemctl enable dhcpcd
+
+#安装ssh
+pacman -Sy openssh
+#编辑文件 /ect/ssh/sshd_config 编辑如下并去掉 # 号
+#PasswordAuthentication yes
+#PermitRootLogin yes 	
+#PermitEmptyPasswords no
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>使用ArchLinux编译LineageOS</title>
+      <link>http://hais.pw/2017/archbuildlineageos/</link>
+      <pubDate>Sun, 17 Sep 2017 10:03:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/archbuildlineageos/</guid>
+      <description>
+
+&lt;h3 id=&#34;准备工作&#34;&gt;准备工作&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;电脑磁盘空余150G以上&lt;/li&gt;
+&lt;li&gt;电脑运存大于4G&lt;/li&gt;
+&lt;li&gt;安装系统时 swap 推荐设置10G&lt;/li&gt;
+&lt;li&gt;推荐设置 /tmp 空间为10G&lt;/li&gt;
+&lt;li&gt;系统默认使用 Python2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;1-分区调整-如安装系统时已设置swap比较大的可不设置&#34;&gt;1、分区调整(如安装系统时已设置swap比较大的可不设置)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;dd if=/dev/zero of=/swapfile.img bs=1M count=10240
+chmod 600 /swapfile.img
+mkswap /swapfile.img
+swapon /swapfile.img
+#编辑 /etc/fstab 在最后加入一行
+/swapfile.img	swap	swap	defaults			0	0
+tmpfs			/tmp	tmpfs	defaults,size=10G	0	0
+#调整完成后可使用 free -h 查看
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-准备工作&#34;&gt;2、准备工作&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 编辑文件/etc/pacman.conf，最后面添加lib32和AUR支持
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+[archlinuxcn]
+SigLevel = Optional TrustAll
+Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+
+# 编辑文件/etc/pacman.d/mirrorlist
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.163.com/archlinux/$repo/os/$arch
+Server = http://mirror.bit.edu.cn/archlinux/$repo/os/$arch
+
+#安装软件包
+pacman -Syy gcc gnupg flex bison gperf sdl wxgtk squashfs-tools curl ncurses zlib schedtool perl-switch zip unzip libxslt bc jdk8-openjdk base-devel git-core repo wget imagemagick base-devel git-core pngcrush libxml2 lzop maven tmux screen w3m ncftp
+
+#AUR安装 ncurses ,参考 http://blog.csdn.net/gddxz_zhouhao/article/details/53466977
+yaourt -S ncurses5-compat-libs
+
+#做软连接 python
+ln /usr/bin/python2 /usr/bin/python
+
+# 编辑文件/etc/yaourtrc 去掉 # AURURL 的注释，加入aur镜像地址，修改为
+AURURL=&amp;quot;https://aur.tuna.tsinghua.edu.cn&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-由于同步android源码需要翻墙-可以使用修改hosts的方法翻墙&#34;&gt;3、由于同步Android源码需要翻墙，可以使用修改hosts的方法翻墙&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#下载hosts翻墙
+wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O /etc/hosts
+
+#使用清华大学的repo源
+export REPO_URL=&#39;https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;4-创建源码目录并进入&#34;&gt;4、创建源码目录并进入&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p ~/Android/LineageOS &amp;amp;&amp;amp; cd ~/Android/LineageOS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;6-下载配置清单文件&#34;&gt;6、下载配置清单文件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#下载核心官方的清单文件
+repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+#配置个人自定义的清单文件，根据机型和系统寻找device、vendor、kernel
+mkdir -p .repo/local_manifests &amp;amp;&amp;amp; cd .repo/local_manifests
+wget https://raw.githubusercontent.com/hais1992/android_device_xiaomi_mido/hais-cm14.1/local_manifests_mido.xml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;7-开始同步源码&#34;&gt;7、开始同步源码&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#修改使用清华大学的aosp源码
+nano .repo/manifest.xml 
+#把第四行的 https://android.googlesource.com 改为 https://aosp.tuna.tsinghua.edu.cn 或 git://mirrors.ustc.edu.cn/aosp/
+cd ~/Android/LineageOS
+repo sync -c -f -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;8-同步完成后-创建一个编译环境的脚本-lineageosbuild-sh-输入以下内容&#34;&gt;8、同步完成后，创建一个编译环境的脚本&amp;rdquo;LineageOSBuild.sh&amp;rdquo;输入以下内容&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;
+#!/bin/sh
+# 改为自己的源码路径
+BASEPATH=~/Android/LineageOS
+# 创建 ccache 缓存目录
+mkdir -p $BASEPATH/ccache_dir
+export USE_CCACHE=1
+export CCACHE_DIR=$BASEPATH/ccache_dir
+export JACK_SERVER_VM_ARGUMENTS=&amp;quot;-Xmx4096M -Dfile.encoding=UTF-8 -XX:+TieredCompilation&amp;quot;
+export SDCLANG=true
+export SDCLANG_PATH=$BASEPATH/prebuilts/snapdragon/llvm-3.8/bin
+export SDCLANG_LTO_DEFS=$BASEPATH/device/qcom/common/sdllvm-lto-defs.mk
+export WITH_SU=true
+cd $BASEPATH
+make clean
+make clobber
+./prebuilts/sdk/tools/jack-admin kill-server
+wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O ./system/core/rootdir/etc/hosts
+./prebuilts/misc/linux-x86/ccache/ccache -M 50G
+source build/envsetup.sh
+breakfast mido
+mka bacon -j$( nproc --all )
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存并退出后，给脚本执行权限&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chmod +x LineageOSBuild.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;9-开始编译&#34;&gt;9、开始编译&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#执行刚刚的脚本进入编译环境
+source sudamodBuild.sh
+#编译结算后执行命令释放资源
+croot
+./prebuilts/sdk/tools/jack-admin kill-server
+#执行清理，便于下次编译
+croot
+make clean
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;其它说明&#34;&gt;其它说明&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果要收集编译日记，则编译的时候执行“brunch xiaomi_mido | tee ~/log.txt”&lt;/li&gt;
+&lt;li&gt;后期更新的话就 “repo sync” 同步上游源码，再次编译就可以了&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;制作OTA包&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#每次编译完后进入目录，把 sm_z2_plus-target_files-xxx.zip 文件备份
+~/Android/LineageOS/out/target/product/z2_plus/obj/PACKAGING/target_files_intermediates
+#当包有两个后，就可以使用命令制作增量包了
+croot
+./build/tools/releasetools/ota_from_target_files -i sm_z2_plus-target_files-old.zip sm_z2_plus-target_files-new.zip ota.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果是使用远程机器进行编译，为了预防网络不稳定重连ssh的情况，可以使用 screen 来进行编译&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install screen
+#新建一个名为 hais 的 screen
+screen -S hais
+#显示一个名为 hais 的 screen
+screen -r -d hais
+#显示所有正在运行的 screen
+screen -ls
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;参考网站&#34;&gt;参考网站：&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;https://github.com/wzv5/android_device_zuk_z2_plus/wiki/
+https://hais.pw/2017/07/28/UbuntuBuildSudaMod/
+https://mirror.tuna.tsinghua.edu.cn/help/AOSP/
+https://lug.ustc.edu.cn/wiki/mirrors/help/aosp
+https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/
+https://github.com/sy618/hosts
+https://www.isthnew.com/build-lineageos/
+http://blog.csdn.net/gddxz_zhouhao/article/details/53466977
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>新电脑发布文章的方法</title>
+      <link>http://hais.pw/2017/machinehexopostarticle/</link>
+      <pubDate>Fri, 15 Sep 2017 10:52:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/machinehexopostarticle/</guid>
+      <description>&lt;p&gt;1、安装 Node.js 和 Git&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;下载地址：http://nodejs.org/
+下载地址：http://git-scm.com/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2、安装Hexo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;npm install -g hexo-cli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3、用git拉下hexo分支代码&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone -b hexo git@github.com:hais1992/hais1992.github.io.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4、安装环境&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd hais1992.github.io.git
+$ npm install hexo
+$ hexo init
+$ npm install
+$ npm install hexo-deployer-git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5、然后就可以编辑文章发布了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo generate -d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6、发布完成后就可以继续提交代码备份了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git add *
+$ git commit -m 提交代码
+$ git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;参考地址：
+    &lt;a href=&#34;https://hexo.io/zh-cn/docs/setup.html&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://hexo.io/zh-cn/docs/setup.html&lt;/a&gt;
+    &lt;a href=&#34;http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more&lt;/a&gt;
+    &lt;a href=&#34;https://github.com/Ben02/hexo-theme-Anatole/wiki/Installation&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/Ben02/hexo-theme-Anatole/wiki/Installation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>使用Ubuntu16.04编译SudaMod</title>
+      <link>http://hais.pw/2017/ubuntubuildsudamod/</link>
+      <pubDate>Fri, 28 Jul 2017 10:03:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/ubuntubuildsudamod/</guid>
+      <description>
+
+&lt;h5 id=&#34;注-文章参考-https-github-com-wzv5-android-device-zuk-z2-plus-wiki-进行修改整理&#34;&gt;注：文章参考 &lt;a href=&#34;https://github.com/wzv5/android_device_zuk_z2_plus/wiki/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/wzv5/android_device_zuk_z2_plus/wiki/&lt;/a&gt; 进行修改整理。&lt;/h5&gt;
+
+&lt;h3 id=&#34;准备工作&#34;&gt;准备工作&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;电脑磁盘空余150G以上&lt;/li&gt;
+&lt;li&gt;电脑运存大于4G&lt;/li&gt;
+&lt;li&gt;推荐使用Ubuntu16.04&lt;/li&gt;
+&lt;li&gt;安装系统时 swap 推荐设置10G&lt;/li&gt;
+&lt;li&gt;推荐设置 /tmp 空间为10G&lt;/li&gt;
+&lt;li&gt;系统默认使用 Python2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;1-分区调整-如安装系统时已设置swap比较大的可不设置&#34;&gt;1、分区调整(如安装系统时已设置swap比较大的可不设置)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo dd if=/dev/zero of=/swapfile.img bs=1M count=10240
+sudo chmod 600 /swapfile.img
+sudo mkswap /swapfile.img
+sudo swapon /swapfile.img
+#编辑 /etc/fstab 在最后加入一行
+/swapfile.img	swap	swap	defaults			0	0
+tmpfs			/tmp	tmpfs	defaults,size=10G	0	0
+#调整完成后可使用 free -h 查看
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;2-安装编译工具&#34;&gt;2、安装编译工具&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk3.0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev gcc-multilib maven tmux screen w3m ncftp liblz4-tool pngquant bc
+#编译过程中缺少依赖rsync,使用sudo apt-get install rsync解决
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-由于同步android源码需要翻墙-可以使用修改hosts的方法翻墙&#34;&gt;3、由于同步Android源码需要翻墙，可以使用修改hosts的方法翻墙&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O /etc/hosts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;4-安装repo&#34;&gt;4、安装repo&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#下载安装
+sudo wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/bin/repo
+sudo chmod +x /usr/bin/repo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;5-创建源码目录并进入&#34;&gt;5、创建源码目录并进入&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p ~/Android/SudaMod &amp;amp;&amp;amp; cd ~/Android/SudaMod
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;6-下载配置清单文件&#34;&gt;6、下载配置清单文件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#下载核心官方的清单文件
+repo init -u git://github.com/SudaMod/android.git -b sm-3.1
+#配置个人自定义的清单文件，包含device、vendor、kernel
+mkdir -p .repo/local_manifests &amp;amp;&amp;amp; cd .repo/local_manifests
+wget https://raw.githubusercontent.com/wzv5/android_device_zuk_z2_plus/sm-3.1/z2_sm_manifest.xml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;7-开始同步源码&#34;&gt;7、开始同步源码&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd ~/Android/SudaMod
+repo sync -c -f -j$( nproc --all ) --force-sync --no-clone-bundle --no-tags
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;8-同步完成后-创建一个编译环境的脚本-sudamodbuild-sh-输入以下内容&#34;&gt;8、同步完成后，创建一个编译环境的脚本&amp;rdquo;sudamodBuild.sh&amp;rdquo;输入以下内容&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;
+#!/bin/sh
+# 改为自己的源码路径
+BASEPATH=~/Android/DirtyUnicorns
+# 创建 ccache 缓存目录
+mkdir -p $BASEPATH/ccache_dir
+export USE_CCACHE=1
+export CCACHE_DIR=$BASEPATH/ccache_dir
+export JACK_SERVER_VM_ARGUMENTS=&amp;quot;-Xmx4096M -Dfile.encoding=UTF-8 -XX:+TieredCompilation&amp;quot;
+export SDCLANG=true
+export SDCLANG_PATH=$BASEPATH/prebuilts/snapdragon/llvm-3.8/bin
+export SDCLANG_LTO_DEFS=$BASEPATH/device/qcom/common/sdllvm-lto-defs.mk
+cd $BASEPATH
+make clean
+make clobber
+./prebuilts/sdk/tools/jack-admin kill-server
+wget https://raw.githubusercontent.com/sy618/hosts/master/FQ -O ./system/core/rootdir/etc/hosts
+./prebuilts/misc/linux-x86/ccache/ccache -M 50G
+source build/envsetup.sh
+breakfast z2_plus
+mka bacon -j$( nproc --all )
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存并退出后，给脚本执行权限&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chmod +x sudamodBuild.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;9-开始编译&#34;&gt;9、开始编译&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#执行刚刚的脚本进入编译环境
+source sudamodBuild.sh
+#开始编译
+brunch z2_plus
+#编译结算后执行命令释放资源
+croot
+./prebuilts/sdk/tools/jack-admin kill-server
+#执行清理，便于下次编译
+croot
+make clean
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;其它说明&#34;&gt;其它说明&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果要收集编译日记，则编译的时候执行“brunch z2_plus | tee ~/sudalog.txt”&lt;/li&gt;
+&lt;li&gt;后期更新的话就 “repo sync” 同步上游源码，再次编译就可以了&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;制作OTA包&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#每次编译完后进入目录，把 sm_z2_plus-target_files-xxx.zip 文件备份
+~/Android/SudaMod/out/target/product/z2_plus/obj/PACKAGING/target_files_intermediates
+#当包有两个后，就可以使用命令制作增量包了
+croot
+./build/tools/releasetools/ota_from_target_files -i sm_z2_plus-target_files-old.zip sm_z2_plus-target_files-new.zip ota.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;添加主题引擎，编辑清单文件 ~/Android/SudaMod/.repo/local_manifests 增加以下两行内容，后执行 &amp;ldquo;repo sync&amp;rdquo; 同步
+``` bash
+&lt;project name=&#34;sudamod/android_vendor_extra-1&#34; path=&#34;vendor/extra&#34; remote=&#34;github&#34; revision=&#34;cm-14.1-rootless&#34;/&gt;
+&lt;project name=&#34;substratum/interfacer&#34; path=&#34;packages/services/ThemeInterfacer&#34; remote=&#34;github&#34; revision=&#34;n-rootless&#34;/&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;#每次同步源码都需要重新打补丁 &amp;quot; ./vendor/extra/patch.sh &amp;quot;
+#加入主题管理器，创建 prebuilt 目录，在其中放入主题管理器 Substratum.apk 文件，编辑 sm.mk 文件，在最后加入以下代码后保存即可
+PRODUCT_COPY_FILES += \$(LOCAL_PATH)/prebuilt/Substratum.apk:/system/app/Substratum/Substratum.apk
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;编译的时候偶尔卡住不动或者有提示“Compiling SDK Stubs with Jack”，的可以改一下jack的配置文件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#修改 ./prebuilts/sdk/tools/jack-admin，找到
+JACK_SERVER_COMMAND=&amp;quot;java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -cp $LAUNCHER_JAR $LAUNCHER_NAME&amp;quot;
+#改为
+JACK_SERVER_COMMAND=&amp;quot;java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -Xmx4096M -cp $LAUNCHER_JAR $LAUNCHER_NAME&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果是使用远程机器进行编译，为了预防网络不稳定重连ssh的情况，可以使用 screen 来进行编译&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install screen
+#新建一个名为 hais 的 screen
+screen -S hais
+#显示一个名为 hais 的 screen
+screen -r -d hais
+#显示所有正在运行的 screen
+screen -ls
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hexo发布一篇新文章</title>
+      <link>http://hais.pw/2017/hexopostarticle/</link>
+      <pubDate>Fri, 28 Jul 2017 09:58:44 +0000</pubDate>
+      
+      <guid>http://hais.pw/2017/hexopostarticle/</guid>
+      <description>&lt;p&gt;发布新文章&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hexo new [layout] &amp;lt;title&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;生成文件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hexo generate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;调试、查看&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hexo server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;部署、上传&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hexo deploy
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://hais.pw/about/</link>
+      <pubDate>Fri, 14 Jul 2017 16:47:03 +0000</pubDate>
+      
+      <guid>http://hais.pw/about/</guid>
+      <description>&lt;p&gt;关于 Hello_海生&lt;/p&gt;
+
+&lt;p&gt;广西壮族人、农村90后标准屌丝。
+2011年，一时脑抽筋。在广西的某所大专里学习了注定成为屌丝的专业——软件技术。&lt;/p&gt;
+
+&lt;p&gt;关于博客&lt;/p&gt;
+
+&lt;p&gt;本人不精通吃喝嫖赌，不懂得生活，就是喜欢乱折腾点东西，但总是折腾得半桶水。
+脑子有限，仅能把一些信息放在这里借宿。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>友情链接</title>
+      <link>http://hais.pw/links/</link>
+      <pubDate>Fri, 14 Jul 2017 16:46:48 +0000</pubDate>
+      
+      <guid>http://hais.pw/links/</guid>
+      <description>&lt;p&gt;暂时没有哟~&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>linux 控制台 连接 vpn (PPTPD)</title>
+      <link>http://hais.pw/2015/vpnpptpd/</link>
+      <pubDate>Sun, 10 May 2015 12:52:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2015/vpnpptpd/</guid>
+      <description>&lt;p&gt;其实在ubuntu里面很简单。&lt;/p&gt;
+
+&lt;p&gt;1、安装 pptpd&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install pptp-linux
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2、就可以直接拨号连接了（下面中文改为相应的参数）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo pptpsetup --create 名称 --server 地址 --username 账号 --password 密码 --encrypt --start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;–create后的是创建的连接名称，可以为任意名称;
+–server后接的是vpn服务器的IP;
+–username是用户名
+–password是密码，在这也可以没这个参数，命令稍后会自动询问。这样可以保证账号安全
+–encrypt 是表示需要加密，不必指定加密方式，命令会读取配置文件中的加密方式
+–start是表示创建连接完后马上连接，如果你不想连，就不写&lt;/p&gt;
+
+&lt;p&gt;如果创建好了连接–start选项或者是下次再想连接时，输入命令 “sudo pon 名称”  就可以了，然后 “sudo poff”命令可以 断开当前连接。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>给Linux 增加sudo命令</title>
+      <link>http://hais.pw/2015/linuxsudo/</link>
+      <pubDate>Sun, 01 Feb 2015 23:52:38 +0000</pubDate>
+      
+      <guid>http://hais.pw/2015/linuxsudo/</guid>
+      <description>&lt;p&gt;习惯了 sudo apt-get update ， 然后 某天，发现没有了 sudo 感觉有点不爽快了。&lt;/p&gt;
+
+&lt;p&gt;然后第一感觉就是使用 root 用户安装 sudo 包&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ apt-get install sudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装完后我们新建个用户&amp;rdquo;hais&amp;rdquo;，并给他加入sudo的权限&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ adduser hais     #添加一个hais用户
+$ passwd hais     #给hais用户设置密码
+$ mkdir /home/hais      #给hais用户创建一个文件夹
+$ chown hais:hais /home/hais        #给hais设置home文件
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;创建好了之后，开始配置sudo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ chmod u+w /etc/sudoers         #修改文件给可写
+$ nano /etc/sudoers               #修改文件 在 &#39;root ALL=(ALL) ALL&#39; 后增加一行 “hais ALL=(ALL) ALL”
+$ chmod u-w /etc/sudoers         #恢复文件权限
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后就OK了， 可以愉快的使用 sudo 了&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

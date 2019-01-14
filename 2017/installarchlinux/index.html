@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Hello_海生">
+  <meta name="description" content="一个屌丝程序员的个人记事本！">
+  <meta name="keywords" content="Hais,Hais1992,Hello_海生">
+  
+  <link rel="prev" href="http://hais.pw/2017/archbuildlineageos/" />
+  <link rel="next" href="http://hais.pw/2017/archlinuxaddsudo/" />
+  <link rel="canonical" href="http://hais.pw/2017/installarchlinux/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           VBox安装ArchLinux | Hais丶
+       
+  </title>
+  <meta name="title" content="VBox安装ArchLinux | Hais丶">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "http://hais.pw/"
+    },
+    "articleSection" : "posts",
+    "name" : "VBox安装ArchLinux",
+    "headline" : "VBox安装ArchLinux",
+    "description" : "准备软件 下载Arch：https://www.archlinux.org/download/ 下载Vbox：https://www.virtualbox.org/wiki/Downloads  参考： http://blog.csdn.net/qq_25187981/article/details/75209051 http://bbs.archlinuxcn.org/viewtopic.php?id=1037 https://wiki.archlinux.org/index.php/Installation_guide https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)  安装步骤 ping www.baidu.com	#检查网络 timedatectl set-ntp true	#更新时间 fdisk -l	#查看磁盘名称 fdisk /dev/sda	#磁盘分区 #新建第一个分区，大小为1G，作为交换分区 # n	-&gt;新建 # p -&gt;选择分区类型为主分区 # l -&gt;选择分区扇区号 # 2048 -&gt;设置分区开始的值 # 2099200 -&gt;设置分区结束的值 # # 创建第二个分区，剩下的空间 # n	-&gt;新建 # p -&gt;选择分区类型 # 2 -&gt;选择分区扇区号 # 回车 -&gt;设置分区开始的值 # 回车 -&gt;设置分区结束的值 # # 写入分区信息 # w mkswap /dev/sda1	#格式化交换分区 swapon /dev/sda1	#挂载交换分区 mkfs.",
+    "inLanguage" : "en-us",
+    "author" : "Hello_海生",
+    "creator" : "Hello_海生",
+    "publisher": "Hello_海生",
+    "accountablePerson" : "Hello_海生",
+    "copyrightHolder" : "Hello_海生",
+    "copyrightYear" : "2017",
+    "datePublished": "2017-09-17 16:26:32 &#43;0000 UTC",
+    "dateModified" : "2017-09-17 16:26:32 &#43;0000 UTC",
+    "url" : "http://hais.pw/2017/installarchlinux/",
+    "wordCount" : "184",
+    "keywords" : [ "Linux","ArchLinux","Arch","Vbox", "Hais丶"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://hais.pw/">Hais丶</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/links/" title="">Links</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="http://hais.pw/">Hais丶</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/links/" title="">Links</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">VBox安装ArchLinux</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="http://hais.pw/" rel="author">Hello_海生</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2017-09-17 itemprop="datePublished">September 17, 2017</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="http://hais.pw/categories/linux/"> Linux </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h3 id="准备软件">准备软件</h3>
+
+<pre><code>下载Arch：https://www.archlinux.org/download/
+下载Vbox：https://www.virtualbox.org/wiki/Downloads
+</code></pre>
+
+<h3 id="参考">参考：</h3>
+
+<pre><code>http://blog.csdn.net/qq_25187981/article/details/75209051
+http://bbs.archlinuxcn.org/viewtopic.php?id=1037
+https://wiki.archlinux.org/index.php/Installation_guide
+https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+</code></pre>
+
+<h3 id="安装步骤">安装步骤</h3>
+
+<pre><code class="language-bash">ping www.baidu.com			#检查网络
+
+timedatectl set-ntp true	#更新时间
+
+fdisk -l					#查看磁盘名称
+
+fdisk /dev/sda				#磁盘分区
+
+#新建第一个分区，大小为1G，作为交换分区
+# n		  -&gt;新建
+# p  	  -&gt;选择分区类型为主分区
+# l       -&gt;选择分区扇区号
+# 2048    -&gt;设置分区开始的值
+# 2099200 -&gt;设置分区结束的值
+#
+# 创建第二个分区，剩下的空间
+# n		  -&gt;新建
+# p  	  -&gt;选择分区类型
+# 2       -&gt;选择分区扇区号
+# 回车    -&gt;设置分区开始的值
+# 回车    -&gt;设置分区结束的值
+#
+# 写入分区信息
+# w
+
+mkswap /dev/sda1	#格式化交换分区
+
+swapon /dev/sda1	#挂载交换分区
+
+mkfs.ext4 /dev/sda2	#格式化文件分区
+
+mount /dev/sda2 /mnt	#挂载文件分区
+
+# 将下载的源选择为中国
+sed -i '/China/!{n;/Server/s/^/#/};t;n' /etc/pacman.d/mirrorlist
+
+pacstrap /mnt base	# 下载安装基本的系统
+
+genfstab -U /mnt &gt;&gt; /mnt/etc/fstab	# 设置自动挂载分区
+
+arch-chroot /mnt	# 进入下载好的系统进行配置
+
+# 设置系统时区
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+hwclock --systohc	# 同步时间
+
+# 设置本地化，将en_US.UTF-8前的#号去掉
+vi /etc/locale.gen
+
+# 应用本地化配置
+locale-gen
+
+# 设置系统语言
+echo LANG=en_US.UTF-8 &gt; /etc/locale.conf
+
+# 设置本机名称
+echo ArchLinux &gt; /etc/hostname
+
+# 设置密码
+passwd
+
+# 更新包的信息
+pacman -Ssy
+
+# 下载Boot Loader包并安装
+pacman -S grub
+
+# 将Boot Loader安装到指定的硬盘
+grub-install --target=i386-pc /dev/sda
+
+# 创建Boot Loader配置
+grub-mkconfig -o /boot/grub/grub.cfg
+
+# 退出安装的系统
+exit
+
+# 卸载分区
+umount -R /mnt
+
+# 重新启动
+reboot
+</code></pre>
+
+<h3 id="重启进入系统后的工作">重启进入系统后的工作</h3>
+
+<pre><code class="language-bash">ip a	#查询机器IP 
+
+#开始联网
+systemctl enable dhcpcd
+
+#安装ssh
+pacman -Sy openssh
+#编辑文件 /ect/ssh/sshd_config 编辑如下并去掉 # 号
+#PasswordAuthentication yes
+#PermitRootLogin yes 	
+#PermitEmptyPasswords no
+
+</code></pre>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Hello_海生 </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=http://hais.pw/2017/installarchlinux/>http://hais.pw/2017/installarchlinux/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="http://hais.pw/tags/linux/">
+                    #Linux</a></span>
+            
+            <span class="tag"><a href="http://hais.pw/tags/archlinux/">
+                    #ArchLinux</a></span>
+            
+            <span class="tag"><a href="http://hais.pw/tags/arch/">
+                    #Arch</a></span>
+            
+            <span class="tag"><a href="http://hais.pw/tags/vbox/">
+                    #Vbox</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="http://hais.pw/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="http://hais.pw/2017/archbuildlineageos/" class="prev" rel="prev" title="使用ArchLinux编译LineageOS"><i class="iconfont icon-left"></i>&nbsp;使用ArchLinux编译LineageOS</a>
+         
+        
+        <a href="http://hais.pw/2017/archlinuxaddsudo/" class="next" rel="next" title="给 ArchLinux 增加sudo命令">给 ArchLinux 增加sudo命令&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2014 - 2019</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="http://hais.pw/">Hello_海生</a> | </span> 
+         
+
+         
+            <a href="http://www.miibeian.gov.cn/" target="_blank" rel="external nofollow">桂ICP备15000640号 </a> |
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
