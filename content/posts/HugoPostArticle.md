@@ -12,7 +12,7 @@ hugo server --buildDrafts
 
 生成网站
 ``` bash
-hugo --theme=LeaveIt --baseUrl="http://hais.pw/"
+hugo --theme=LeaveIt --baseUrl="https://hais.pw/"
 ```
 
 部署、上传
