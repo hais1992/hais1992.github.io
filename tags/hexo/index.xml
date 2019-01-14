@@ -19,7 +19,7 @@
       <guid>https://hais.pw/2019/hugopostarticle/</guid>
       <description>本地调试
 hugo server --buildDrafts  生成网站
-hugo --theme=LeaveIt --baseUrl=&amp;quot;http://hais.pw/&amp;quot;  部署、上传
+hugo --theme=LeaveIt --baseUrl=&amp;quot;https://hais.pw/&amp;quot;  部署、上传
 git add -A git commit -m &amp;quot;修改说明&amp;quot; git push  </description>
     </item>
     
