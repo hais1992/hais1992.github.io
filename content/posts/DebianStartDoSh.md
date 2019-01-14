@@ -1,6 +1,6 @@
 ---
 title: Debian开机自动执行文件
-date: 2019-01-15T10:00:37+08:00
+date: 2019-01-14T11:20:37+08:00
 tags: [Debian,Linux]
 categories: ["Linux"]
 ---

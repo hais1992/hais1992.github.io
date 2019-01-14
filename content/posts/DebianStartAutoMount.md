@@ -3,6 +3,7 @@ title: Debian开机自动挂载U盘
 date: 2019-01-14T10:50:37+08:00
 tags: [Debian,Linux]
 categories: ["Linux"]
+draft: false
 ---
 
 查看U盘(移动硬盘)的分区UUID
