@@ -42,7 +42,7 @@ include_shell "/usr/share/lighttpd/include-conf-enabled.pl"
 3、配置/etc/lighttpd/conf-enabled/10-ssl.conf
 ``` bash
 # /usr/share/doc/lighttpd/ssl.txt
-
+#证书可到https://console.cloud.tencent.com/ssl 申请，使用Nginx根
 $SERVER["socket"] == ":443" {
      ssl.engine = "enable"
      ssl.pemfile = "/mnt/harddisk/ssl/myk.pw.pem"

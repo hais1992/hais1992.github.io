@@ -1,0 +1,40 @@
+---
+title: Linux 中一键搭建SSR(单用户自用，其实是ss)
+date: 2019-01-17T11:20:37+08:00
+tags: [Linux,SSR]
+categories: ["Linux"]
+---
+
+### 准备工作
+ - 准备一台 Linux 的服务器，并使用SSH链接
+ - 如是云服务器，请在web面板上放行对应端口
+
+### 准备工作
+``` bash
+#Centos执行这个
+yum -y install git
+
+#Ubuntu、Debian执行这个
+apt-get update && apt-get -y install git
+```
+
+### 克隆代码并进行安装
+``` bash
+#下载代码
+git clone https://github.com/flyzy2005/ss-fly
+
+#开始一键安装,hais1992为密码,40380为连接端口
+ss-fly/ss-fly.sh -i hais1992 40380
+```
+安装成功后就可以直接使用了
+
+
+Ps：
+参考网站：https://github.com/flyzy2005/ss-fly
+启动：/etc/init.d/ss-fly start
+停止：/etc/init.d/ss-fly stop
+重启：/etc/init.d/ss-fly restart
+状态：/etc/init.d/ss-fly status
+查看ss链接：ss-fly/ss-fly.sh -sslink
+修改配置文件：nano /etc/shadowsocks.json
+卸载ss服务 ss-fly/ss-fly.sh -uninstall
