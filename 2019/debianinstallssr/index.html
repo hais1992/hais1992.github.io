@@ -9,9 +9,9 @@
   <meta name="description" content="一个屌丝程序员的个人记事本！">
   <meta name="keywords" content="Hais,Hais1992,Hello_海生">
   
-  <link rel="prev" href="https://hais.pw/2019/lighttpdhttps/" />
-  <link rel="next" href="https://hais.pw/2019/debianinstallssr/" />
-  <link rel="canonical" href="https://hais.pw/2019/debianstartdosh/" />
+  <link rel="prev" href="https://hais.pw/2019/debianstartdosh/" />
+  <link rel="next" href="https://hais.pw/2019/windowsinstallhonolulu/" />
+  <link rel="canonical" href="https://hais.pw/2019/debianinstallssr/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Debian开机自动执行文件 | Hais丶
+           Linux 中一键搭建SSR(单用户自用，其实是ss) | Hais丶
        
   </title>
-  <meta name="title" content="Debian开机自动执行文件 | Hais丶">
+  <meta name="title" content="Linux 中一键搭建SSR(单用户自用，其实是ss) | Hais丶">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,11 +44,10 @@
          "@id": "https://hais.pw/"
     },
     "articleSection" : "posts",
-    "name" : "Debian开机自动执行文件",
-    "headline" : "Debian开机自动执行文件",
-    "description" : "创建启动sh脚本文件,输入以下内容
-sleep 20 #延时执行 #下面是要执行的信息 sh /mnt/harddisk/stopMysql.sh &amp;&amp; sh /mnt/harddisk/startAria2.sh  把启动脚本增加到启动文件
-nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineStart.sh &amp;  ",
+    "name" : "Linux 中一键搭建SSR(单用户自用，其实是ss)",
+    "headline" : "Linux 中一键搭建SSR(单用户自用，其实是ss)",
+    "description" : "准备工作  准备一台 Linux 的服务器，并使用SSH链接 如是云服务器，请在web面板上放行对应端口  准备工作 #Centos执行这个 yum -y install git #Ubuntu、Debian执行这个 apt-get update &amp;&amp; apt-get -y install git  克隆代码并进行安装 #下载代码 git clone https://github.com/flyzy2005/ss-fly #开始一键安装,hais1992为密码,40380为连接端口 ss-fly/ss-fly.sh -i hais1992 40380  安装成功后就可以直接使用了
+Ps： 参考网站：https://github.com/flyzy2005/ss-fly 启动：/etc/init.d/ss-fly start 停止：/etc/init.d/ss-fly stop 重启：/etc/init.d/ss-fly restart 状态：/etc/init.d/ss-fly status 查看ss链接：ss-fly/ss-fly.sh -sslink 修改配置文件：nano /etc/shadowsocks.json 卸载ss服务 ss-fly/ss-fly.sh -uninstall",
     "inLanguage" : "en-us",
     "author" : "Hello_海生",
     "creator" : "Hello_海生",
@@ -56,11 +55,11 @@ nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineS
     "accountablePerson" : "Hello_海生",
     "copyrightHolder" : "Hello_海生",
     "copyrightYear" : "2019",
-    "datePublished": "2019-01-14 11:20:37 &#43;0800 CST",
-    "dateModified" : "2019-01-14 11:20:37 &#43;0800 CST",
-    "url" : "https://hais.pw/2019/debianstartdosh/",
-    "wordCount" : "20",
-    "keywords" : [ "Debian","Linux", "Hais丶"]
+    "datePublished": "2019-01-17 10:20:37 &#43;0800 CST",
+    "dateModified" : "2019-01-17 10:20:37 &#43;0800 CST",
+    "url" : "https://hais.pw/2019/debianinstallssr/",
+    "wordCount" : "47",
+    "keywords" : [ "Linux","SSR", "Hais丶"]
 }
 </script>
 
@@ -122,11 +121,11 @@ nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineS
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Debian开机自动执行文件</h1>
+        <h1 class="post-title" itemprop="name headline">Linux 中一键搭建SSR(单用户自用，其实是ss)</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://hais.pw/" rel="author">Hello_海生</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-01-14 itemprop="datePublished">January 14, 2019</time>
+                on <time datetime=2019-01-17 itemprop="datePublished">January 17, 2019</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
@@ -152,20 +151,44 @@ nano /etc/rc.local #在 exit 0 前面增加以下一行 nohup /root/openMachineS
           
           
 
-          <p>创建启动sh脚本文件,输入以下内容</p>
+          
 
-<pre><code class="language-bash">sleep 20    #延时执行
-#下面是要执行的信息
-sh /mnt/harddisk/stopMysql.sh &amp;&amp; sh /mnt/harddisk/startAria2.sh
+<h3 id="准备工作">准备工作</h3>
+
+<ul>
+<li>准备一台 Linux 的服务器，并使用SSH链接</li>
+<li>如是云服务器，请在web面板上放行对应端口</li>
+</ul>
+
+<h3 id="准备工作-1">准备工作</h3>
+
+<pre><code class="language-bash">#Centos执行这个
+yum -y install git
+
+#Ubuntu、Debian执行这个
+apt-get update &amp;&amp; apt-get -y install git
 </code></pre>
 
-<p>把启动脚本增加到启动文件</p>
+<h3 id="克隆代码并进行安装">克隆代码并进行安装</h3>
 
-<pre><code class="language-bash">nano /etc/rc.local
+<pre><code class="language-bash">#下载代码
+git clone https://github.com/flyzy2005/ss-fly
 
-#在 exit 0 前面增加以下一行
-nohup /root/openMachineStart.sh &amp;
+#开始一键安装,hais1992为密码,40380为连接端口
+ss-fly/ss-fly.sh -i hais1992 40380
 </code></pre>
+
+<p>安装成功后就可以直接使用了</p>
+
+<p>Ps：
+参考网站：<a href="https://github.com/flyzy2005/ss-fly" rel="nofollow noreferrer" target="_blank">https://github.com/flyzy2005/ss-fly</a>
+启动：/etc/init.d/ss-fly start
+停止：/etc/init.d/ss-fly stop
+重启：/etc/init.d/ss-fly restart
+状态：/etc/init.d/ss-fly status
+查看ss链接：ss-fly/ss-fly.sh -sslink
+修改配置文件：nano /etc/shadowsocks.json
+卸载ss服务 ss-fly/ss-fly.sh -uninstall</p>
 
     </div>
 
@@ -180,7 +203,7 @@ nohup /root/openMachineStart.sh &amp;
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://hais.pw/2019/debianstartdosh/>https://hais.pw/2019/debianstartdosh/</span>
+                    <a href=https://hais.pw/2019/debianinstallssr/>https://hais.pw/2019/debianinstallssr/</span>
             </p>
             
              
@@ -196,11 +219,11 @@ nohup /root/openMachineStart.sh &amp;
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://hais.pw/tags/debian/">
-                    #Debian</a></span>
-            
             <span class="tag"><a href="https://hais.pw/tags/linux/">
                     #Linux</a></span>
+            
+            <span class="tag"><a href="https://hais.pw/tags/ssr/">
+                    #SSR</a></span>
             
             </section>
         
@@ -212,10 +235,10 @@ nohup /root/openMachineStart.sh &amp;
 
     <div class="post-nav">
         
-        <a href="https://hais.pw/2019/lighttpdhttps/" class="prev" rel="prev" title="Lighttpd配置Https"><i class="iconfont icon-left"></i>&nbsp;Lighttpd配置Https</a>
+        <a href="https://hais.pw/2019/debianstartdosh/" class="prev" rel="prev" title="Debian开机自动执行文件"><i class="iconfont icon-left"></i>&nbsp;Debian开机自动执行文件</a>
          
         
-        <a href="https://hais.pw/2019/debianinstallssr/" class="next" rel="next" title="Linux 中一键搭建SSR(单用户自用，其实是ss)">Linux 中一键搭建SSR(单用户自用，其实是ss)&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://hais.pw/2019/windowsinstallhonolulu/" class="next" rel="next" title="Windows Server数据中心版(无UI) 安装Honolulu管理中心">Windows Server数据中心版(无UI) 安装Honolulu管理中心&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

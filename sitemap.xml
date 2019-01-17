@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
+      <loc>https://hais.pw/2019/windowsinstallhonolulu/</loc>
+      
+      <lastmod>2019-01-17T11:00:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://hais.pw/2019/debianinstallssr/</loc>
+      
+      <lastmod>2019-01-17T10:20:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://hais.pw/2019/debianstartdosh/</loc>
       
       <lastmod>2019-01-14T11:20:37+08:00</lastmod>
@@ -203,7 +223,7 @@
     <url>
       <loc>https://hais.pw/</loc>
       
-      <lastmod>2019-01-14T11:20:37+08:00</lastmod>
+      <lastmod>2019-01-17T11:00:37+08:00</lastmod>
       
       
       
@@ -216,6 +236,18 @@
       <loc>https://hais.pw/tags/hexo/</loc>
       
       <lastmod>2019-01-14T10:26:34+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://hais.pw/tags/honolulu/</loc>
+      
+      <lastmod>2019-01-17T11:00:37+08:00</lastmod>
       
       
       
@@ -263,7 +295,7 @@
     <url>
       <loc>https://hais.pw/categories/linux/</loc>
       
-      <lastmod>2019-01-14T11:20:37+08:00</lastmod>
+      <lastmod>2019-01-17T10:20:37+08:00</lastmod>
       
       
       
@@ -275,7 +307,7 @@
     <url>
       <loc>https://hais.pw/tags/linux/</loc>
       
-      <lastmod>2019-01-14T11:20:37+08:00</lastmod>
+      <lastmod>2019-01-17T10:20:37+08:00</lastmod>
       
       
       
@@ -299,7 +331,19 @@
     <url>
       <loc>https://hais.pw/posts/</loc>
       
-      <lastmod>2019-01-14T11:20:37+08:00</lastmod>
+      <lastmod>2019-01-17T11:00:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://hais.pw/tags/ssr/</loc>
+      
+      <lastmod>2019-01-17T10:20:37+08:00</lastmod>
       
       
       
@@ -360,6 +404,30 @@
       <loc>https://hais.pw/tags/vbox/</loc>
       
       <lastmod>2017-09-17T16:26:32+00:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://hais.pw/categories/windows/</loc>
+      
+      <lastmod>2019-01-17T11:00:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://hais.pw/tags/windows/</loc>
+      
+      <lastmod>2019-01-17T11:00:37+08:00</lastmod>
       
       
       

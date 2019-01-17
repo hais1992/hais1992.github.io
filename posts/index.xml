@@ -6,10 +6,31 @@
     <description>Recent content in Posts on Hais丶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 11:20:37 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jan 2019 11:00:37 +0800</lastBuildDate>
     
 	<atom:link href="https://hais.pw/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows Server数据中心版(无UI) 安装Honolulu管理中心</title>
+      <link>https://hais.pw/2019/windowsinstallhonolulu/</link>
+      <pubDate>Thu, 17 Jan 2019 11:00:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/windowsinstallhonolulu/</guid>
+      <description>前提说明。 + 下文中的名称介绍 + **服务器** 指的是 **被控制端** + **使用端** 指的是 **使用的机子(一般是自己电脑)** + Honolulu 可安装在服务器中，也可安装在使用端中  准备工作  准备一台 Windows Server数据中心版(无UI) 的服务器，并开通3389远程链接 如是 腾讯云、阿里云 等云服务器，请在web面板上放行 入方向的5985、5986 端口  服务器(被控制端)配置 1、打开远程后，在cmd窗口输入以下命令
+#运行 PowerShell PowerShell #打开 PowerShell 的远程链接权限 Enable-PSRemoting -Force Set-NetFirewallRule -Name &amp;quot;WINRM-HTTP-In-TCP-PUBLIC&amp;quot; -RemoteAddress Any  安装 Honolulu (Windows Admin Center) 可安装在 服务器 中，也可安装在 使用端 中，请根据需求选择 软件下载页面为：Honolulu 下载页面 软件下载地址为：Honolulu 下载地址 以下命令，不管安装在那个端都通用(要在PowerShell中运行)
+#授权信任IP Set-Item WSMan:localhost\client\trustedhosts -value * -Force #下载软件 wget -Uri https://download.microsoft.com/download/1/0/5/1059800B-F375-451C-B37E-758FFC7C8C8B/WindowsAdminCenter1809.5.msi -UseBasicParsing -OutFile c:\Honolulu.</description>
+    </item>
+    
+    <item>
+      <title>Linux 中一键搭建SSR(单用户自用，其实是ss)</title>
+      <link>https://hais.pw/2019/debianinstallssr/</link>
+      <pubDate>Thu, 17 Jan 2019 10:20:37 +0800</pubDate>
+      
+      <guid>https://hais.pw/2019/debianinstallssr/</guid>
+      <description>准备工作  准备一台 Linux 的服务器，并使用SSH链接 如是云服务器，请在web面板上放行对应端口  准备工作 #Centos执行这个 yum -y install git #Ubuntu、Debian执行这个 apt-get update &amp;amp;&amp;amp; apt-get -y install git  克隆代码并进行安装 #下载代码 git clone https://github.com/flyzy2005/ss-fly #开始一键安装,hais1992为密码,40380为连接端口 ss-fly/ss-fly.sh -i hais1992 40380  安装成功后就可以直接使用了
+Ps： 参考网站：https://github.com/flyzy2005/ss-fly 启动：/etc/init.d/ss-fly start 停止：/etc/init.d/ss-fly stop 重启：/etc/init.d/ss-fly restart 状态：/etc/init.d/ss-fly status 查看ss链接：ss-fly/ss-fly.sh -sslink 修改配置文件：nano /etc/shadowsocks.json 卸载ss服务 ss-fly/ss-fly.sh -uninstall</description>
+    </item>
     
     <item>
       <title>Debian开机自动执行文件</title>
