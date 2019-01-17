@@ -785,12 +785,15 @@ screen -ls
     </item>
     
     <item>
-      <title>友情链接</title>
+      <title>Links</title>
       <link>https://hais.pw/links/</link>
       <pubDate>Fri, 14 Jul 2017 16:46:48 +0000</pubDate>
       
       <guid>https://hais.pw/links/</guid>
-      <description>&lt;p&gt;暂时没有哟~&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://t.hais.pw&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;淘宝优惠券&lt;/a&gt;
+&lt;a href=&#34;http://v.hais.pw&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;视频VIP网&lt;/a&gt;
+&lt;a href=&#34;http://myk.pw&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Hais丶的小网盘&lt;/a&gt;
+&lt;a href=&#34;http://shang.qq.com/wpa/qunwpa?idkey=2350dacb71df9931beba243628affd292766de5969320df1097bc85bd1d3a7db&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;QQ交流群&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
