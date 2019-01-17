@@ -47,7 +47,7 @@ preserveTaxonomyNames = true
 [params]
     since = 2014
     author = "Hello_海生"                           # Author's name
-    avatar = "/images/me/avatar.jpg"           # Author's avatar
+    avatar = "/images/me/avatar.png"           # Author's avatar
     subtitle = "一个屌丝程序员的个人记事本！"         # Subtitle
     cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
