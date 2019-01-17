@@ -59,7 +59,7 @@ server.modules = ( &quot;mod_access&quot;, &quot;mod_alias&quot;, &quot;mod_comp
     "datePublished": "2019-01-14 11:20:37 &#43;0800 CST",
     "dateModified" : "2019-01-14 11:20:37 &#43;0800 CST",
     "url" : "https://hais.pw/2019/lighttpdhttps/",
-    "wordCount" : "207",
+    "wordCount" : "209",
     "keywords" : [ "Lighttpd","Linux","Http", "Hais丶"]
 }
 </script>
@@ -188,7 +188,7 @@ include_shell &quot;/usr/share/lighttpd/include-conf-enabled.pl&quot;
 <p>3、配置/etc/lighttpd/conf-enabled/10-ssl.conf</p>
 
 <pre><code class="language-bash"># /usr/share/doc/lighttpd/ssl.txt
-
+#证书可到https://console.cloud.tencent.com/ssl 申请，使用Nginx根
 $SERVER[&quot;socket&quot;] == &quot;:443&quot; {
      ssl.engine = &quot;enable&quot;
      ssl.pemfile = &quot;/mnt/harddisk/ssl/myk.pw.pem&quot;
