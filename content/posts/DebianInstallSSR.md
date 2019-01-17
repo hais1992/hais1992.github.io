@@ -1,6 +1,6 @@
 ---
 title: Linux 中一键搭建SSR(单用户自用，其实是ss)
-date: 2019-01-17T11:20:37+08:00
+date: 2019-01-17T10:20:37+08:00
 tags: [Linux,SSR]
 categories: ["Linux"]
 ---
